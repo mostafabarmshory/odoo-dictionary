@@ -1,19 +1,18 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	<record id="view_delivery_carrier_form" model="ir.ui.view">
-		<field name="model">delivery.carrier</field>
-		<field name="inherit_id" ref="delivery.view_delivery_carrier_form" />
-		<field name="arch" type="xml">
-			<xpath expr="//notebook/page[1]" position='before'>
-				<page string="Oman Post"
-					attrs="{'invisible': [('delivery_type', '!=', 'vw_oman_post')]}">
-					<group>
-						<group name="vw_oman_post_details">
-							<field name="vw_oman_post_service" />
-						</group>
-					</group>
-				</page>
-			</xpath>
-		</field>
-	</record>
+	<!-- Top menu item -->
+	<!-- This menu item's purpose is to overwrite another one defined in the 
+		base module in order to set new groups. -->
+	<menuitem
+		id="vw_dic_menu_root" 
+		name="Dictionary"
+		web_icon="vw_odic,static/description/icon.png"
+		sequence="6">
+		<menuitem
+			id="vw_odic_menu_dictionary"
+			name="Dictionary" />
+		<menuitem
+			id="vw_odic_menu_words"
+			name="Words" />
+	</menuitem>
 </odoo>
