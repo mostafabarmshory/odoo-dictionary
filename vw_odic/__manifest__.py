@@ -6,8 +6,13 @@
     "license": "AGPL-3",
     "category": "Dictionary",
     "version": "14.0.1.0.0",
-    "depends": ["web"],
+    "depends": [
+        "base",
+        "web"
+    ],
     "data": [
+        "data/ir.model.access.csv",
+        
         "views/dashboard.xml",
         "views/dictionary.xml",
         "views/word.xml"

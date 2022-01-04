@@ -1,5 +1,5 @@
 
-from odoo import models
+from odoo import models, fields
 
 
 class Example(models.Model):
