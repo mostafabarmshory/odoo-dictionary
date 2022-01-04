@@ -10,4 +10,4 @@ class Word(models.Model):
     
     dictionary_id = fields.Many2one("vw_odic.dictionary", string="Dictionary")
     tag_ids = fields.Many2many("vw_odic.tag", string="Tags")
-    example_ids = fields.Many2one("vw_odic.example", string="Examples")
+    example_ids = fields.One2many("vw_odic.example", "word_id", string="Examples")

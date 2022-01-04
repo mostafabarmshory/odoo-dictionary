@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="vw_odic_example_view_tree" model="ir.ui.view">
+	<record id="vw_odic_example_view_tree" model="ir.ui.view">
 		<field name="name">vw_odic.example.tree</field>
 		<field name="model">vw_odic.example</field>
 		<field name="arch" type="xml">
 			<tree string="example">
-				<field name="name" />
+				<field name="value" />
 			</tree>
 		</field>
 	</record>
@@ -18,25 +18,12 @@
 				<sheet>
 					<group>
 						<group>
-							<field name="name" />
+							<field name="value" />
 							<field name="word_id" />
 							<field 
 								name="tag_ids"
-								widget="many2one_tags" />
+								widget="many2many_tags" />
 						</group>
-						<notebook>
-							<page string="example">
-								<group>
-									<field 
-										name="example_ids"
-										widget="one2many_list">
-										<tree>
-											<field name="value"/> 
-										</tree>
-									</field>
-								</group>
-							</page>
-						</notebook>
 					</group>
 				</sheet>
 			</form>
@@ -48,7 +35,7 @@
 		<field name="model">vw_odic.example</field>
 		<field name="arch" type="xml">
 			<search string="Properties">
-				<field name="name" string="Name" />
+				<field name="value" string="Name" />
 			</search>
 		</field>
 	</record>
