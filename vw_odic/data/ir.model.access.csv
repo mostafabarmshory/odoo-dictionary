@@ -1,2 +1,3 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 access_vw_odic_dictionary,access_vw_odic_dictionary,model_vw_odic_dictionary,base.group_user,1,1,1,1
+access_vw_odic_word,access_vw_odic_word,model_vw_odic_word,base.group_user,1,1,1,1
