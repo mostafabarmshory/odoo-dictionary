@@ -15,10 +15,13 @@
         
         "views/dashboard.xml",
         "views/dictionary.xml",
-        "views/word.xml"
+        "views/word.xml",
+        "views/tag.xml"
     ],
     'auto_install': False,
     'installable': True,
     'application': True,
-    'images': ['static/description/assets/img/main_screenshot.jpg']
+    'images': [
+        'static/description/assets/img/main_screenshot.jpg'
+    ]
 }

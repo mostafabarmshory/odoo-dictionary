@@ -16,4 +16,8 @@
 		id="vw_odic_menu_report"
 		name="Report" 
 		parent="vw_odic_menu_root"/>
+	<menuitem
+		id="vw_odic_menu_settings"
+		name="Settings" 
+		parent="vw_odic_menu_root"/>
 </odoo>

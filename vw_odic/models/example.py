@@ -6,3 +6,8 @@ class Example(models.Model):
     _name = "vw_odic.example"
     _description = "This is a table contains all examples of all dictionaries"
 
+    value = fields.Text()
+    translation = fields.Text()
+    
+    word_id = fields.Many2one("vw_odic.word", string="Word")
+    

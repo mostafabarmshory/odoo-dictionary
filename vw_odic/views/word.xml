@@ -20,7 +20,23 @@
 						<group>
 							<field name="name" />
 							<field name="dictionary_id" />
+							<field 
+								name="tag_ids"
+								widget="many2many_tags" />
 						</group>
+						<notebook>
+							<page string="Examples">
+								<group>
+									<field 
+										name="example_ids"
+										widget="one2many_list">
+										<tree>
+											<field name="value"/> 
+										</tree>
+									</field>
+								</group>
+							</page>
+						</notebook>
 					</group>
 				</sheet>
 			</form>
