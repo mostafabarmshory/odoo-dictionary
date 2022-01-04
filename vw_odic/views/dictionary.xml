@@ -29,7 +29,7 @@
 		</field>
 	</record>
 
-	<record id="estate_property_view_search" model="ir.ui.view">
+	<record id="vw_odic_dictionary_view_search" model="ir.ui.view">
 		<field name="name">vw_odic.dictionary.search</field>
 		<field name="model">vw_odic.dictionary</field>
 		<field name="arch" type="xml">

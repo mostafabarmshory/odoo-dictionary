@@ -1,2 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo></odoo>
+<odoo>
+    <record id="vw_odic_word_view_tree" model="ir.ui.view">
+		<field name="name">vw_odic.word.tree</field>
+		<field name="model">vw_odic.word</field>
+		<field name="arch" type="xml">
+			<tree string="Word">
+				<field name="name" />
+			</tree>
+		</field>
+	</record>
+
+	<record id="vw_odic_word_view_form" model="ir.ui.view">
+		<field name="name">vw_odic.word.form</field>
+		<field name="model">vw_odic.wordy</field>
+		<field name="arch" type="xml">
+			<form string="Word">
+				<sheet>
+					<group>
+						<group>
+							<field name="name" />
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record id="vw_odic_word_view_search" model="ir.ui.view">
+		<field name="name">vw_odic.word.search</field>
+		<field name="model">vw_odic.word</field>
+		<field name="arch" type="xml">
+			<search string="Properties">
+				<field name="name" string="Name" />
+			</search>
+		</field>
+	</record>
+
+	<record 
+		id="vw_odic_model_word_action"
+		model="ir.actions.act_window">
+		<field name="name">Words</field>
+		<field name="res_model">vw_odic.word</field>
+		<field name="view_mode">tree,form</field>
+		<field name="help" type="html">
+			<p>List of words to manage.</p>
+		</field>
+	</record>
+	
+		
+	<menuitem
+		id="vw_odic_menu_advertisement_words"
+		parent="vw_odic_menu_dictionary"
+		name="Words"
+		action="vw_odic_model_word_action"/>
+</odoo>
