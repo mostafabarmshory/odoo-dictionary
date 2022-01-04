@@ -12,7 +12,7 @@
 
 	<record id="vw_odic_word_view_form" model="ir.ui.view">
 		<field name="name">vw_odic.word.form</field>
-		<field name="model">vw_odic.wordy</field>
+		<field name="model">vw_odic.word</field>
 		<field name="arch" type="xml">
 			<form string="Word">
 				<sheet>
