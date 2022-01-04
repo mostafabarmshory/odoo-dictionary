@@ -16,7 +16,8 @@
         "views/dashboard.xml",
         "views/dictionary.xml",
         "views/word.xml",
-        "views/tag.xml"
+        "views/tag.xml",
+        "views/example.xml"
     ],
     'auto_install': False,
     'installable': True,

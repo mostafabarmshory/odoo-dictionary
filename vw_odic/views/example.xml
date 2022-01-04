@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="vw_odic_example_view_tree" model="ir.ui.view">
+		<field name="name">vw_odic.example.tree</field>
+		<field name="model">vw_odic.example</field>
+		<field name="arch" type="xml">
+			<tree string="example">
+				<field name="name" />
+			</tree>
+		</field>
+	</record>
+
+	<record id="vw_odic_example_view_form" model="ir.ui.view">
+		<field name="name">vw_odic.example.form</field>
+		<field name="model">vw_odic.example</field>
+		<field name="arch" type="xml">
+			<form string="example">
+				<sheet>
+					<group>
+						<group>
+							<field name="name" />
+							<field name="word_id" />
+							<field 
+								name="tag_ids"
+								widget="many2one_tags" />
+						</group>
+						<notebook>
+							<page string="example">
+								<group>
+									<field 
+										name="example_ids"
+										widget="one2many_list">
+										<tree>
+											<field name="value"/> 
+										</tree>
+									</field>
+								</group>
+							</page>
+						</notebook>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record id="vw_odic_example_view_search" model="ir.ui.view">
+		<field name="name">vw_odic.example.search</field>
+		<field name="model">vw_odic.example</field>
+		<field name="arch" type="xml">
+			<search string="Properties">
+				<field name="name" string="Name" />
+			</search>
+		</field>
+	</record>
+
+	<record 
+		id="vw_odic_model_example_action"
+		model="ir.actions.act_window">
+		<field name="name">example</field>
+		<field name="res_model">vw_odic.example</field>
+		<field name="view_mode">tree,form</field>
+		<field name="help" type="html">
+			<p>List of example to manage.</p>
+		</field>
+	</record>
+	
+		
+	<menuitem
+		id="vw_odic_menu_advertisement_example"
+		parent="vw_odic_menu_dictionary"
+		name="example"
+		action="vw_odic_model_example_action"/>
+</odoo>
