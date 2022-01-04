@@ -14,5 +14,6 @@
     ],
     'auto_install': False,
     'installable': True,
+    'application': True,
     'images': ['static/description/assets/img/main_screenshot.jpg']
 }
