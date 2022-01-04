@@ -19,7 +19,7 @@
 					<group>
 						<group>
 							<field name="name" />
-                            <field name="ictionary_id" />
+							<field name="dictionary_id" />
 						</group>
 					</group>
 				</sheet>
