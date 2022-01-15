@@ -10,4 +10,5 @@ class Example(models.Model):
     translation = fields.Text()
     
     word_id = fields.Many2one("vw_odic.word", string="Word")
+    tag_ids = fields.Many2many("vw_odic.tag", string="Tag")
     
