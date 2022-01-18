@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<odoo>
+
+	<record id="vw_odic.pronunciation_view_tree" model="ir.ui.view">
+		<field name="name">vw_odic.pronunciation.tree</field>
+		<field name="model">vw_odic.pronunciation</field>
+		<field name="arch" type="xml">
+			<tree string="Pronunciations">
+				<field name="headwordentry_id" />
+				<field name="phoneticNotation" />
+				<field name="phoneticSpelling" />
+			</tree>
+		</field>
+	</record>
+
+	<record id="vw_odic_pronunciation_view_form" model="ir.ui.view">
+		<field name="name">vw_odic.pronunciation.form</field>
+		<field name="model">vw_odic.pronunciation</field>
+		<field name="arch" type="xml">
+			<form string="Pronunciation">
+				<sheet>
+					<group>
+						<group>
+							<field name="headwordentry_id" />
+							<field name="audioFile" />
+							<field name="phoneticNotation" />
+							<field name="phoneticSpelling" />
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record id="vw_odic_pronunciation_view_search" model="ir.ui.view">
+		<field name="name">vw_odic.pronunciation.search</field>
+		<field name="model">vw_odic.pronunciation</field>
+		<field name="arch" type="xml">
+			<search string="Properties">
+				<field name="headwordentry_id" />
+				<field name="phoneticNotation" />
+				<field name="phoneticSpelling" />
+			</search>
+		</field>
+	</record>
+
+	<record 
+		id="vw_odic_model_pronunciation_action"
+		model="ir.actions.act_window">
+		<field name="name">Pronunciations</field>
+		<field name="res_model">vw_odic.pronunciation</field>
+		<field name="view_mode">tree,form</field>
+		<field name="help" type="html">
+			<p>List of pronunciations to manage.</p>
+		</field>
+	</record>
+	
+		
+	<menuitem
+		id="vw_odic_menu_advertisement_pronunciation"
+		parent="vw_odic_menu_dictionary"
+		name="Pronunciations"
+		action="vw_odic_model_pronunciation_action" />
+</odoo>

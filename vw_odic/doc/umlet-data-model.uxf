@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.2">
+<diagram program="umlet" version="14.3.0">
   <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
@@ -97,7 +97,9 @@ variantForms (VariantFormsList, optional): Various words that are used interchan
       <w>248</w>
       <h>80</h>
     </coordinates>
-    <panel_attributes>pronunciations</panel_attributes>
+    <panel_attributes>pronunciations
+m1=1..1
+m2=0..n</panel_attributes>
     <additional_attributes>290.0;10.0;10.0;80.0</additional_attributes>
   </element>
   <element>

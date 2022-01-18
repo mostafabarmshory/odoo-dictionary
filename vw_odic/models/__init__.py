@@ -1,4 +1,2 @@
-from . import dictionary
-from . import word
-from . import tag
-from . import example
+from . import headwordentry
+from . import pronunciation
