@@ -22,5 +22,7 @@ class Pronunciation(models.Model):
     phoneticSpelling = fields.Char(string='Phonetic Spelling', size=256, trim=True, translate=False, required=False)
 
     headwordentry_id = fields.Many2one(ondelete='cascade', comodel_name='vw_odic.headwordentry')
+    regions_ids = fields.Many2many(string='Regions', comodel_name='vw_odic.region', _req_name='text')
+
 
 

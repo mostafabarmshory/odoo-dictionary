@@ -1,9 +1,9 @@
 from odoo import models, fields
 
 
-class Rigion(models.Model):
+class Region(models.Model):
     _name = "vw_odic.region"
-    _description = "Group of lexicalEntries related to a specific result for a given word ID."
+    _description = "Group of regions related to words."
 
-    text = fields.Char(size=1024, trim=True, translate=False, required=True)
+    text = fields.Char(size=256, trim=True, translate=False, required=True)
 

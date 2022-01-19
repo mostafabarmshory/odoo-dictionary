@@ -25,6 +25,7 @@
 							<field name="audioFile" />
 							<field name="phoneticNotation" />
 							<field name="phoneticSpelling" />
+							<field name="regions_ids" widget="many2many_tags" />
 						</group>
 					</group>
 				</sheet>

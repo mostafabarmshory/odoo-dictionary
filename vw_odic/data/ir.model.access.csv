@@ -1,3 +1,4 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 access_vw_odic_headwordentry,access_vw_odic_headwordentry,model_vw_odic_headwordentry,base.group_user,1,1,1,1
 access_vw_odic_pronunciation,access_vw_odic_pronunciation,model_vw_odic_pronunciation,base.group_user,1,1,1,1
+access_vw_odic_region,access_vw_odic_region,model_vw_odic_region,base.group_user,1,1,1,1

@@ -27,6 +27,16 @@
 						</group>
 					</group>
 				</sheet>
+				<notebook>
+					<page>
+						<field name="" string="" >
+							<tree string="Precios">
+								<field name="pronunciation" />
+								<field name="region" />
+							</tree>
+						</field>
+					</page>
+				</notebook>
 			</form>
 		</field>
 	</record>

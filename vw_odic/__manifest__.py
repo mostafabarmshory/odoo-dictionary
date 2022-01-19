@@ -15,7 +15,8 @@
         
         "views/dashboard.xml",
         "views/headwordentry.xml",
-        "views/pronunciation.xml"
+        "views/pronunciation.xml",
+        "views/region.xml"
     ],
     'auto_install': False,
     'installable': True,
