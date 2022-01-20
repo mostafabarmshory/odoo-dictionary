@@ -26,29 +26,18 @@
 							<field name="type" />
 						</group>
 					</group>
+					<notebook>
+						<page string="Pronunciations">
+							<field name="pronunciations_ids" />
+						</page>
+					</notebook>
 				</sheet>
-				<notebook>
-					<page>
-						<field name="" string="" >
-							<tree string="Precios">
-								<field name="pronunciation" />
-								<field name="region" />
-							</tree>
-						</field>
-					</page>
-				</notebook>
-				
-				
-				
 				<div class="oe_chatter">
 					<field name="message_follower_ids" options="{'post_refresh':True}" groups="base.group_user"/>
 					<field name="activity_ids"/>
 					<field name="message_ids"/>
 				</div>
 			</form>
-			
-			
-			
 		</field>
 	</record>
 
