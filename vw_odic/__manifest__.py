@@ -8,7 +8,10 @@
     "version": "14.0.1.0.0",
     "depends": [
         "base",
-        "web"
+        "web",
+        "mail",
+        "portal",
+        "rating"
     ],
     "data": [
         "data/ir.model.access.csv",
