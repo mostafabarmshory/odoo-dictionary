@@ -58,7 +58,7 @@
 		model="ir.actions.act_window">
 		<field name="name">Words</field>
 		<field name="res_model">vw_odic.headwordentry</field>
-		<field name="view_mode">tree,form</field>
+		<field name="view_mode">tree,form,activity</field>
 		<field name="help" type="html">
 			<p>List of dictionaries to manage.</p>
 		</field>
