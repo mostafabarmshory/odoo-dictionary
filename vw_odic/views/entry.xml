@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<odoo>
+	<record 
+		id="vw_odic.entry_view_tree" 
+		model="ir.ui.view">
+		<field name="name">vw_odic.entry.tree</field>
+		<field name="model">vw_odic.entry</field>
+		<field name="arch" type="xml">
+			<tree 
+				string="Entries"
+				default_order="homographNumber desc">
+				<field name="homographNumber" />
+			</tree>
+		</field>
+	</record>
+	<record id="vw_odic_entry_view_form" model="ir.ui.view">
+		<field name="name">vw_odic.entry.form</field>
+		<field name="model">vw_odic.entry</field>
+		<field name="arch" type="xml">
+			<form string="Entry">
+				<sheet>
+					<group>
+						<group>
+							<field name="homographNumber" />
+						</group>
+					</group>
+					<notebook>
+						<page string="Pronunciations">
+							<field name="pronunciations_ids" />
+						</page>
+						<page string="Etymologies">
+							<field name="etymologies_ids" />
+						</page>
+						<page string="Notes">
+							<field name="notes_ids" />
+						</page>
+					</notebook>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id="vw_odic_entry_view_search" model="ir.ui.view">
+		<field name="name">vw_odic.entry.search</field>
+		<field name="model">vw_odic.entry</field>
+		<field name="arch" type="xml">
+			<search string="Properties">
+				<field name="homographNumber" />
+			</search>
+		</field>
+	</record>
+</odoo>

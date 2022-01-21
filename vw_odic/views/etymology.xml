@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<odoo>
+	<record id="vw_odic.etymology_view_tree" model="ir.ui.view">
+		<field name="name">vw_odic.etymology.tree</field>
+		<field name="model">vw_odic.etymology</field>
+		<field name="arch" type="xml">
+			<tree 
+				string="Domains"
+				editable="top"
+				multi_edit="1"
+				default_order="text desc">
+				<field name="text" />
+			</tree>
+		</field>
+	</record>
+	<record id="vw_odic_etymology_view_form" model="ir.ui.view">
+		<field name="name">vw_odic.etymology.form</field>
+		<field name="model">vw_odic.etymology</field>
+		<field name="arch" type="xml">
+			<form string="Etymology">
+				<sheet>
+					<group>
+						<group>
+							<field name="text" />
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id="vw_odic_etymology_view_search" model="ir.ui.view">
+		<field name="name">vw_odic.etymology.search</field>
+		<field name="model">vw_odic.etymology</field>
+		<field name="arch" type="xml">
+			<search string="Properties">
+				<field name="text" />
+			</search>
+		</field>
+	</record>
+</odoo>

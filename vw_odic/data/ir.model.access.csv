@@ -9,3 +9,6 @@ access_vw_odic_derivative,access_vw_odic_derivative,model_vw_odic_derivative,bas
 access_vw_odic_domain,access_vw_odic_domain,model_vw_odic_domain,base.group_user,1,1,1,1
 access_vw_odic_lexicalentrynote,access_vw_odic_lexicalentrynote,model_vw_odic_lexicalentrynote,base.group_user,1,1,1,1
 access_vw_odic_notetype,access_vw_odic_notetype,model_vw_odic_notetype,base.group_user,1,1,1,1
+access_vw_odic_entry,access_vw_odic_entry,model_vw_odic_entry,base.group_user,1,1,1,1
+access_vw_odic_entrynote,access_vw_odic_entrynote,model_vw_odic_entrynote,base.group_user,1,1,1,1
+access_vw_odic_etymology,access_vw_odic_etymology,model_vw_odic_etymology,base.group_user,1,1,1,1

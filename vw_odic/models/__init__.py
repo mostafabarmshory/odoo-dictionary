@@ -10,4 +10,7 @@ from . import lexicalentry
 from . import lexicalcategory
 from . import lexicalentryNote
 from . import derivative
+from . import entry
+from . import entrynote
+from . import etymology
 

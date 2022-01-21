@@ -59,3 +59,8 @@ class LexicalEntry(models.Model):
         inverse_name='lexicalEntry_id',
         string='Notes',
         help="Notes related to the lexical entry")
+    entries_ids = fields.One2many(
+        comodel_name="vw_odic.entry",
+        inverse_name='lexicalEntry_id',
+        string='Entries',
+        help="")

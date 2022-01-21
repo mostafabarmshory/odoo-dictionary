@@ -21,10 +21,9 @@
 				<sheet>
 					<group>
 						<group>
+							<field name="text" />
 							<field name="language" />
 							<field name="root" />
-							<field name="text" />
-							<field name="headwordentry_id" />
 							<field name="lexicalCategory_id" />
 						</group>
 						<group>
@@ -33,6 +32,9 @@
 						</group>
 					</group>
 					<notebook>
+						<page string="Entries">
+							<field name="entries_ids" />
+						</page>
 						<page string="Pronunciations">
 							<field name="pronunciations_ids" />
 						</page>
