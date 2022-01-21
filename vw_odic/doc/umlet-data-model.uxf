@@ -150,7 +150,7 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>240</x>
+      <x>152</x>
       <y>512</y>
       <w>128</w>
       <h>40</h>
@@ -299,22 +299,22 @@ m2=0..1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>296</x>
+      <x>208</x>
       <y>336</y>
-      <w>120</w>
+      <w>208</w>
       <h>192</h>
     </coordinates>
     <panel_attributes>// A level of language usage, typically with respect 
 // to formality. e.g. 'offensive', 'informal'
 registers</panel_attributes>
-    <additional_attributes>130.0;10.0;10.0;220.0</additional_attributes>
+    <additional_attributes>240.0;10.0;10.0;220.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>208</x>
+      <x>184</x>
       <y>392</y>
-      <w>96</w>
+      <w>72</w>
       <h>136</h>
     </coordinates>
     <panel_attributes>// A particular area in which the pronunciation 
@@ -322,18 +322,20 @@ registers</panel_attributes>
 m1=0..n
 m2=0..n
 regions</panel_attributes>
-    <additional_attributes>90.0;150.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;150.0;40.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
+      <x>272</x>
       <y>512</y>
-      <w>224</w>
-      <h>32</h>
+      <w>312</w>
+      <h>40</h>
     </coordinates>
-    <panel_attributes>domains</panel_attributes>
-    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
+    <panel_attributes>domains
+m1=0..n
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -417,7 +419,9 @@ m2=0..n</panel_attributes>
       <w>72</w>
       <h>112</h>
     </coordinates>
-    <panel_attributes>domains</panel_attributes>
+    <panel_attributes>domains
+m1=0..n
+m2=0..n</panel_attributes>
     <additional_attributes>30.0;10.0;10.0;120.0</additional_attributes>
   </element>
 </diagram>

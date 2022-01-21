@@ -20,9 +20,11 @@ class AbstractDerivative(models.AbstractModel):
 
 class DerivativeOf(models.Model):
     _name = "vw_odic.derivativeof"
+    _description = "Related entry to words."
     _inherit = ["vw_odic.abstractderivative"]
 
 
 class Derivative(models.Model):
     _name = "vw_odic.derivative"
+    _description = "Related entry to words."
     _inherit = ["vw_odic.abstractderivative"]

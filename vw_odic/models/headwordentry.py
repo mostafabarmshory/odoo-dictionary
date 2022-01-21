@@ -24,5 +24,10 @@ class HeadwordEntry(models.Model):
         ('inflection', 'Inflection'),
         ('phrase', 'Phrase')
     ])
-    pronunciations_ids = fields.One2many(comodel_name='vw_odic.pronunciation', inverse_name='headwordentry_id')
-    lexicalEntries_ids = fields.One2many(comodel_name='vw_odic.lexicalentry', inverse_name='headwordentry_id')
+    pronunciations_ids = fields.Many2many(
+        comodel_name='vw_odic.pronunciation', 
+        string='Pronunciations',
+        help="Other words from which their Sense derives")
+    lexicalEntries_ids = fields.One2many(
+        comodel_name='vw_odic.lexicalentry', 
+        inverse_name='headwordentry_id')
