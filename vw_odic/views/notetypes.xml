@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<odoo>
+	<record id="vw_odic.notetype_view_tree" model="ir.ui.view">
+		<field name="name">vw_odic.notetype.tree</field>
+		<field name="model">vw_odic.notetype</field>
+		<field name="arch" type="xml">
+			<tree 
+				string="Note Types"
+				editable="top"
+				multi_edit="1"
+				default_order="name desc">
+				<field name="name" />
+			</tree>
+		</field>
+	</record>
+	<record id="vw_odic_notetype_view_form" model="ir.ui.view">
+		<field name="name">vw_odic.notetype.form</field>
+		<field name="model">vw_odic.notetype</field>
+		<field name="arch" type="xml">
+			<form string="Note Types">
+				<sheet>
+					<group>
+						<group>
+							<field name="name" />
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id="vw_odic_notetype_view_search" model="ir.ui.view">
+		<field name="name">vw_odic.notetype.search</field>
+		<field name="model">vw_odic.notetype</field>
+		<field name="arch" type="xml">
+			<search string="Properties">
+				<field name="name" />
+			</search>
+		</field>
+	</record>
+	<record 
+		id="vw_odic_model_region_action"
+		model="ir.actions.act_window">
+		<field name="name">Note Types</field>
+		<field name="res_model">vw_odic.notetype</field>
+		<field name="view_mode">tree,form</field>
+		<field name="help" type="html">
+			<p>List of Note Types to manage.</p>
+		</field>
+	</record>
+	<menuitem
+		id="vw_odic_menu_settings_notetype"
+		parent="vw_odic_menu_settings"
+		name="Note Types"
+		action="vw_odic_model_region_action" />
+</odoo>

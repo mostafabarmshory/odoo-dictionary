@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<odoo>
+	<record id="vw_odic.lexicalentrynote_view_tree"
+		model="ir.ui.view">
+		<field name="name">vw_odic.lexicalentrynote.tree</field>
+		<field name="model">vw_odic.lexicalentrynote</field>
+		<field name="arch" type="xml">
+			<tree string="Notes" editable="top" multi_edit="1"
+				default_order="text desc">
+				<field name="text" />
+				<field name="type_id" />
+			</tree>
+		</field>
+	</record>
+</odoo>

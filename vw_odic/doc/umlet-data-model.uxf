@@ -330,12 +330,12 @@ regions</panel_attributes>
       <x>272</x>
       <y>512</y>
       <w>312</w>
-      <h>40</h>
+      <h>48</h>
     </coordinates>
     <panel_attributes>domains
 m1=0..n
 m2=0..n</panel_attributes>
-    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
+    <additional_attributes>10.0;30.0;370.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -423,5 +423,66 @@ m2=0..n</panel_attributes>
 m1=0..n
 m2=0..n</panel_attributes>
     <additional_attributes>30.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>856</x>
+      <y>360</y>
+      <w>128</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>LexicalEntryNote
+--
+--
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>920</x>
+      <y>480</y>
+      <w>128</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>// Abstract Note for all part of the system
+AbstractNote
+--
++ id:
++ text:
++ type:
+--
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>912</x>
+      <y>392</y>
+      <w>96</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>248</y>
+      <w>192</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>// A linguistic category of words (or more precisely
+// lexical items), generally defined by the syntactic 
+// or morphological behaviour of the lexical item in 
+// question, such as noun or verb ,
+notes &gt;
+m1=0..n
+&lt; lexicalEntry
+m2=0..1</panel_attributes>
+    <additional_attributes>10.0;10.0;220.0;140.0</additional_attributes>
   </element>
 </diagram>

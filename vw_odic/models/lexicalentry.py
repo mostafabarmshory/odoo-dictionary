@@ -4,7 +4,6 @@ class LexicalEntry(models.Model):
     #TODO: 2022, maso: Missed field
     # - compounds           (ArrayOfRelatedEntries, optional): 
     # - grammaticalFeatures (GrammaticalFeaturesList, optional),
-    # - notes               (CategorizedTextList, optional),
     # - variantForms        (VariantFormsList, optional): Various words that are used interchangeably depending on the context, e.g 'a' and 'an'
     _name = "vw_odic.lexicalentry"
     _description = "Group of lexicalEntries related to a specific result for a given word ID."
@@ -27,14 +26,16 @@ class LexicalEntry(models.Model):
     root = fields.Char(size=1024, trim=True, translate=False, required=False)
     
     # A given written or spoken realisation of an entry
-    text = fields.Text(trim=True, translate=False, required=True)
+    text = fields.Text(
+        translate=False,
+        required=True)
     
     headwordentry_id = fields.Many2one(ondelete='cascade', comodel_name='vw_odic.headwordentry')
     lexicalCategory_id = fields.Many2one(ondelete='set null', comodel_name='vw_odic.lexicalcategory')
     derivativeOf_ids = fields.One2many(
         comodel_name='vw_odic.derivativeof', 
         inverse_name='lexicalEntry_id',
-        hlep="Other words from which this one derives")
+        help="Other words from which this one derives")
     derivatives_ids = fields.One2many(
         comodel_name='vw_odic.derivative', 
         inverse_name='lexicalEntry_id',
@@ -53,3 +54,8 @@ class LexicalEntry(models.Model):
         comodel_name='vw_odic.pronunciation',
         string='Pronunciations',
         help="Other words from which their Sense derives")
+    notes_ids = fields.One2many(
+        comodel_name='vw_odic.lexicalentrynote',
+        inverse_name='lexicalEntry_id',
+        string='Notes',
+        help="Notes related to the lexical entry")

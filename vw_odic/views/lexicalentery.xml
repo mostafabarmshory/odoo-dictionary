@@ -42,6 +42,9 @@
 						<page string="Derivative Of">
 							<field name="derivativeOf_ids" />
 						</page>
+						<page string="Notes">
+							<field name="notes_ids" />
+						</page>
 					</notebook>
 				</sheet>
 				<div class="oe_chatter">
