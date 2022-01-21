@@ -15,6 +15,7 @@ class HeadwordEntry(models.Model):
     _mail_post_access = 'read'
     _order = "language desc, id desc"
     _check_company_auto = True
+    _rec_name = 'word'
     
     word = fields.Char(size=1024, trim=True, translate=False, required=True)
     language = fields.Char(size=8, trim=True, translate=False, required=True)

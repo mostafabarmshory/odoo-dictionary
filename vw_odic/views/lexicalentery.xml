@@ -28,6 +28,14 @@
 							<field name="lexicalCategory_id" />
 						</group>
 					</group>
+					<notebook>
+						<page string="Derivatives">
+							<field name="derivatives_ids" />
+						</page>
+						<page string="Derivative Of">
+							<field name="derivativeOf_ids" />
+						</page>
+					</notebook>
 				</sheet>
 				<div class="oe_chatter">
 					<field name="message_follower_ids" options="{'post_refresh':True}" groups="base.group_user"/>

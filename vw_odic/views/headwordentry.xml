@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <odoo>
-
 	<record id="vw_odic_headwordentry_view_tree" model="ir.ui.view">
 		<field name="name">vw_odic.headwordentry.tree</field>
 		<field name="model">vw_odic.headwordentry</field>
@@ -12,7 +11,6 @@
 			</tree>
 		</field>
 	</record>
-
 	<record id="vw_odic_headwordentry_view_form" model="ir.ui.view">
 		<field name="name">vw_odic.headwordentry.form</field>
 		<field name="model">vw_odic.headwordentry</field>
@@ -43,7 +41,6 @@
 			</form>
 		</field>
 	</record>
-
 	<record id="vw_odic_headwordentry_view_search" model="ir.ui.view">
 		<field name="name">vw_odic.headwordentry.search</field>
 		<field name="model">vw_odic.headwordentry</field>
@@ -55,7 +52,6 @@
 			</search>
 		</field>
 	</record>
-
 	<record 
 		id="vw_odic_model_headwordentry_action"
 		model="ir.actions.act_window">
@@ -66,8 +62,6 @@
 			<p>List of dictionaries to manage.</p>
 		</field>
 	</record>
-	
-		
 	<menuitem
 		id="vw_odic_menu_advertisement_headwordentry"
 		parent="vw_odic_menu_dictionary"

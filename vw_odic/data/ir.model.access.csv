@@ -4,3 +4,5 @@ access_vw_odic_pronunciation,access_vw_odic_pronunciation,model_vw_odic_pronunci
 access_vw_odic_region,access_vw_odic_region,model_vw_odic_region,base.group_user,1,1,1,1
 access_vw_odic_lexicalcategory,access_vw_odic_lexicalcategory,model_vw_odic_lexicalcategory,base.group_user,1,1,1,1
 access_vw_odic_lexicalentry,access_vw_odic_lexicalentry,model_vw_odic_lexicalentry,base.group_user,1,1,1,1
+access_vw_odic_derivativeof,access_vw_odic_derivativeof,model_vw_odic_derivativeof,base.group_user,1,1,1,1
+access_vw_odic_derivative,access_vw_odic_derivative,model_vw_odic_derivative,base.group_user,1,1,1,1

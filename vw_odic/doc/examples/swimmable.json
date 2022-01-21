@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "operation": "retrieve",
+    "provider": "Oxford University Press",
+    "schema": "RetrieveEntry"
+  },
+  "query": "swimmable",
+  "results": [
+    {
+      "id": "swimmable",
+      "language": "en-us",
+      "lexicalEntries": [
+        {
+          "derivativeOf": [
+            {
+              "id": "swim",
+              "text": "swim"
+            }
+          ],
+          "entries": [
+            {
+              "inflections": [
+                {
+                  "inflectedForm": "swimmable"
+                }
+              ],
+              "senses": [
+                {
+                  "id": "m_en_gbus1020960.041"
+                }
+              ]
+            }
+          ],
+          "language": "en-us",
+          "lexicalCategory": {
+            "id": "adjective",
+            "text": "Adjective"
+          },
+          "text": "swimmable"
+        }
+      ],
+      "type": "headword",
+      "word": "swimmable"
+    }
+  ]
+}

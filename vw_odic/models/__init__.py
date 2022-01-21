@@ -3,3 +3,4 @@ from . import pronunciation
 from . import region
 from . import lexicalentry
 from . import lexicalcategory
+from . import derivative

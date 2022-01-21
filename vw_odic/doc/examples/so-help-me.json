@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "operation": "retrieve",
+    "provider": "Oxford University Press",
+    "schema": "RetrieveEntry"
+  },
+  "query": "so help me",
+  "results": [
+    {
+      "id": "so_help_me",
+      "language": "en-us",
+      "lexicalEntries": [
+        {
+          "derivativeOf": [
+            {
+              "id": "help",
+              "text": "help"
+            }
+          ],
+          "entries": [
+            {
+              "senses": [
+                {
+                  "constructions": [
+                    {
+                      "text": "so help me"
+                    },
+                    {
+                      "text": "so help me God"
+                    }
+                  ],
+                  "definitions": [
+                    "used to emphasize that one means what one is saying"
+                  ],
+                  "examples": [
+                    {
+                      "text": "if you don't get out, so help me I'll let you have it"
+                    }
+                  ],
+                  "id": "m_en_gbus0460970.039",
+                  "shortDefinitions": [
+                    "used to emphasize that one means what one is saying"
+                  ]
+                }
+              ],
+              "variantForms": [
+                {
+                  "text": "so help me God"
+                }
+              ]
+            }
+          ],
+          "language": "en-us",
+          "lexicalCategory": {
+            "id": "idiomatic",
+            "text": "Idiomatic"
+          },
+          "text": "so help me"
+        }
+      ],
+      "type": "phrase",
+      "word": "so help me"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<odoo>
+	<record id="vw_odic_derivative_view_tree" model="ir.ui.view">
+		<field name="name">vw_odic.derivative.tree</field>
+		<field name="model">vw_odic.derivative</field>
+		<field name="arch" type="xml">
+			<tree string="Derivative">
+				<field name="text" />
+				<field name="language" />
+			</tree>
+		</field>
+	</record>
+	<record id="vw_odic_derivative_view_form" model="ir.ui.view">
+		<field name="name">vw_odic.derivative.form</field>
+		<field name="model">vw_odic.derivative</field>
+		<field name="arch" type="xml">
+			<form string="Derivative">
+				<sheet>
+					<group>
+						<group>
+							<field name="text" />
+							<field name="language" />
+							<field name="regions_ids" widget="many2many_tags" />
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id="vw_odic_derivative_view_search" model="ir.ui.view">
+		<field name="name">vw_odic.derivative.search</field>
+		<field name="model">vw_odic.derivative</field>
+		<field name="arch" type="xml">
+			<search string="Derivative">
+				<field name="text" />
+				<field name="language" />
+			</search>
+		</field>
+	</record>
+
+
+	<record id="vw_odic_derivativeof_view_tree" model="ir.ui.view">
+		<field name="name">vw_odic.derivativeof.tree</field>
+		<field name="model">vw_odic.derivativeof</field>
+		<field name="arch" type="xml">
+			<tree string="Derivative">
+				<field name="text" />
+				<field name="language" />
+			</tree>
+		</field>
+	</record>
+	<record id="vw_odic_derivativeof_view_form" model="ir.ui.view">
+		<field name="name">vw_odic.derivativeof.form</field>
+		<field name="model">vw_odic.derivativeof</field>
+		<field name="arch" type="xml">
+			<form string="Derivative">
+				<sheet>
+					<group>
+						<group>
+							<field name="text" />
+							<field name="language" />
+							<field name="regions_ids" widget="many2many_tags" />
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id="vw_odic_derivativeof_view_search" model="ir.ui.view">
+		<field name="name">vw_odic.derivativeof.search</field>
+		<field name="model">vw_odic.derivativeof</field>
+		<field name="arch" type="xml">
+			<search string="Derivative">
+				<field name="text" />
+				<field name="language" />
+			</search>
+		</field>
+	</record>
+</odoo>

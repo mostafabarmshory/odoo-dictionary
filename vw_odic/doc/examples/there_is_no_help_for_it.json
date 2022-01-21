@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "operation": "retrieve",
+    "provider": "Oxford University Press",
+    "schema": "RetrieveEntry"
+  },
+  "query": "there is no help for it",
+  "results": [
+    {
+      "id": "there_is_no_help_for_it",
+      "language": "en-us",
+      "lexicalEntries": [
+        {
+          "derivativeOf": [
+            {
+              "id": "help",
+              "text": "help"
+            }
+          ],
+          "entries": [
+            {
+              "senses": [
+                {
+                  "constructions": [
+                    {
+                      "text": "no help for it"
+                    },
+                    {
+                      "text": "there is no help for it"
+                    }
+                  ],
+                  "definitions": [
+                    "there is no way of avoiding or remedying a situation"
+                  ],
+                  "examples": [
+                    {
+                      "text": "we'll be up all night but there's no help for it"
+                    }
+                  ],
+                  "id": "m_en_gbus0460970.041",
+                  "shortDefinitions": [
+                    "there is no way of avoiding or remedying situation"
+                  ]
+                }
+              ]
+            }
+          ],
+          "language": "en-us",
+          "lexicalCategory": {
+            "id": "idiomatic",
+            "text": "Idiomatic"
+          },
+          "text": "there is no help for it"
+        }
+      ],
+      "type": "phrase",
+      "word": "there is no help for it"
+    }
+  ]
+}

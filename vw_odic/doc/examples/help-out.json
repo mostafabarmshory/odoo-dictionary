@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "operation": "retrieve",
+    "provider": "Oxford University Press",
+    "schema": "RetrieveEntry"
+  },
+  "query": "help out",
+  "results": [
+    {
+      "id": "help_out",
+      "language": "en-us",
+      "lexicalEntries": [
+        {
+          "derivativeOf": [
+            {
+              "id": "help",
+              "text": "help"
+            }
+          ],
+          "entries": [
+            {
+              "senses": [
+                {
+                  "definitions": [
+                    "give one's services or resources to make it easier for someone to do something"
+                  ],
+                  "examples": [
+                    {
+                      "text": "the teenager helped out in the corner store"
+                    },
+                    {
+                      "text": "he did babysitting to help his mother out"
+                    },
+                    {
+                      "text": "he was always willing to help out other team-mates"
+                    }
+                  ],
+                  "id": "m_en_gbus0460970.062",
+                  "notes": [
+                    {
+                      "text": "also \"help someone out\", \"help out someone\"",
+                      "type": "wordFormNote"
+                    }
+                  ],
+                  "shortDefinitions": [
+                    "give services to make it easier for someone to do something"
+                  ]
+                }
+              ]
+            }
+          ],
+          "grammaticalFeatures": [
+            {
+              "id": "phrasal",
+              "text": "Phrasal",
+              "type": "Unit Structure"
+            }
+          ],
+          "language": "en-us",
+          "lexicalCategory": {
+            "id": "verb",
+            "text": "Verb"
+          },
+          "text": "help out"
+        }
+      ],
+      "type": "phrase",
+      "word": "help out"
+    }
+  ]
+}

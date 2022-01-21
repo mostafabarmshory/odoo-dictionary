@@ -21,7 +21,8 @@
         "views/pronunciation.xml",
         "views/region.xml",
         "views/lexicalcategory.xml",
-        "views/lexicalentery.xml"
+        "views/lexicalentery.xml",
+        "views/derivative.xml"
     ],
     'auto_install': False,
     'installable': True,
