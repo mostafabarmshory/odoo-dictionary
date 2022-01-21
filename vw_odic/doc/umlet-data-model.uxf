@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>368</x>
-      <y>144</y>
+      <y>24</y>
       <w>128</w>
       <h>112</h>
     </coordinates>
@@ -27,7 +27,7 @@ bg=green</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>568</x>
-      <y>288</y>
+      <y>168</y>
       <w>176</w>
       <h>88</h>
     </coordinates>
@@ -59,7 +59,7 @@ bg=green</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>488</x>
-      <y>168</y>
+      <y>48</y>
       <w>208</w>
       <h>136</h>
     </coordinates>
@@ -75,7 +75,7 @@ m2=0..n
     <id>UMLClass</id>
     <coordinates>
       <x>96</x>
-      <y>280</y>
+      <y>160</y>
       <w>200</w>
       <h>80</h>
     </coordinates>
@@ -98,7 +98,7 @@ bg=green</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>192</x>
-      <y>168</y>
+      <y>48</y>
       <w>192</w>
       <h>128</h>
     </coordinates>
@@ -111,7 +111,7 @@ m2=0..n</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>560</x>
-      <y>472</y>
+      <y>352</y>
       <w>160</w>
       <h>72</h>
     </coordinates>
@@ -134,7 +134,7 @@ bg=green
     <id>UMLClass</id>
     <coordinates>
       <x>944</x>
-      <y>312</y>
+      <y>192</y>
       <w>144</w>
       <h>56</h>
     </coordinates>
@@ -151,7 +151,7 @@ bg=green</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>240</x>
-      <y>632</y>
+      <y>512</y>
       <w>128</w>
       <h>40</h>
     </coordinates>
@@ -165,8 +165,8 @@ text:string
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>536</x>
-      <y>680</y>
+      <x>568</x>
+      <y>512</y>
       <w>120</w>
       <h>56</h>
     </coordinates>
@@ -174,29 +174,16 @@ text:string
 --
 + id: string
 + text: string
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>56</x>
-      <y>0</y>
-      <w>80</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>Inline Model 13
 --
-id (string),
-text (string)
-}</panel_attributes>
+
+bg=green</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>472</y>
+      <y>352</y>
       <w>136</w>
       <h>48</h>
     </coordinates>
@@ -210,7 +197,7 @@ text (string)
     <id>Relation</id>
     <coordinates>
       <x>56</x>
-      <y>352</y>
+      <y>232</y>
       <w>144</w>
       <h>136</h>
     </coordinates>
@@ -224,7 +211,7 @@ dialects</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>144</x>
-      <y>472</y>
+      <y>352</y>
       <w>136</w>
       <h>48</h>
     </coordinates>
@@ -240,7 +227,7 @@ bg=green</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>200</x>
-      <y>352</y>
+      <y>232</y>
       <w>56</w>
       <h>136</h>
     </coordinates>
@@ -255,7 +242,7 @@ regions</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>224</x>
-      <y>352</y>
+      <y>232</y>
       <w>176</w>
       <h>80</h>
     </coordinates>
@@ -268,7 +255,7 @@ registers</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>336</x>
-      <y>416</y>
+      <y>296</y>
       <w>136</w>
       <h>48</h>
     </coordinates>
@@ -282,7 +269,7 @@ registers</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>664</x>
-      <y>368</y>
+      <y>248</y>
       <w>72</w>
       <h>120</h>
     </coordinates>
@@ -296,7 +283,7 @@ m2=0..n</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>736</x>
-      <y>320</y>
+      <y>200</y>
       <w>224</w>
       <h>40</h>
     </coordinates>
@@ -310,40 +297,10 @@ m2=0..1</panel_attributes>
     <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
   </element>
   <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>680</x>
-      <y>744</y>
-      <w>216</w>
-      <h>64</h>
-    </coordinates>
-    <panel_attributes>Etymology
---
-+ id: string
-+ text: string</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>888</x>
-      <y>768</y>
-      <w>320</w>
-      <h>48</h>
-    </coordinates>
-    <panel_attributes>// etymologies (arrayofstrings, optional): The origin
-// of the word and the way in which its meaning has 
-// changed throughout history ,
-etymologies
-m1=1..1
-m2=0..n</panel_attributes>
-    <additional_attributes>380.0;30.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
       <x>296</x>
-      <y>456</y>
+      <y>336</y>
       <w>120</w>
       <h>192</h>
     </coordinates>
@@ -356,7 +313,7 @@ registers</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>208</x>
-      <y>512</y>
+      <y>392</y>
       <w>96</w>
       <h>136</h>
     </coordinates>
@@ -371,18 +328,18 @@ regions</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>360</x>
-      <y>640</y>
-      <w>192</w>
-      <h>72</h>
+      <y>512</y>
+      <w>224</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>domains</panel_attributes>
-    <additional_attributes>10.0;10.0;220.0;70.0</additional_attributes>
+    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>272</x>
-      <y>488</y>
+      <y>368</y>
       <w>304</w>
       <h>48</h>
     </coordinates>
@@ -397,7 +354,7 @@ regions</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>464</x>
-      <y>432</y>
+      <y>312</y>
       <w>112</w>
       <h>80</h>
     </coordinates>
@@ -410,7 +367,7 @@ registers</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>488</x>
-      <y>232</y>
+      <y>112</y>
       <w>128</w>
       <h>72</h>
     </coordinates>
@@ -426,7 +383,7 @@ m2=0..n
     <id>Relation</id>
     <coordinates>
       <x>488</x>
-      <y>200</y>
+      <y>80</y>
       <w>176</w>
       <h>104</h>
     </coordinates>
@@ -442,7 +399,7 @@ m2=0..n
     <id>Relation</id>
     <coordinates>
       <x>592</x>
-      <y>368</y>
+      <y>248</y>
       <w>80</w>
       <h>120</h>
     </coordinates>
@@ -455,12 +412,12 @@ m2=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>584</x>
-      <y>536</y>
-      <w>88</w>
-      <h>160</h>
+      <x>616</x>
+      <y>416</y>
+      <w>72</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>domains</panel_attributes>
-    <additional_attributes>70.0;10.0;10.0;180.0</additional_attributes>
+    <additional_attributes>30.0;10.0;10.0;120.0</additional_attributes>
   </element>
 </diagram>

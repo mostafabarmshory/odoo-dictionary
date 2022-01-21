@@ -16,13 +16,16 @@
     "data": [
         "data/ir.model.access.csv",
         
+        # Basic views 
         "views/dashboard.xml",
+        "views/region.xml",
+        "views/domain.xml",
+        
         "views/headwordentry.xml",
         "views/pronunciation.xml",
-        "views/region.xml",
         "views/lexicalcategory.xml",
         "views/lexicalentery.xml",
-        "views/derivative.xml"
+        "views/derivative.xml",
     ],
     'auto_install': False,
     'installable': True,

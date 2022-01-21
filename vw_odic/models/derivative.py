@@ -15,6 +15,7 @@ class AbstractDerivative(models.AbstractModel):
     language = fields.Char(size=8, trim=True, translate=False, required=True)
     regions_ids = fields.Many2many(string='Regions', comodel_name='vw_odic.region')
     lexicalEntry_id = fields.Many2one(ondelete='cascade', comodel_name='vw_odic.lexicalentry')
+    domains_ids = fields.Many2many(string='Domains', comodel_name='vw_odic.domain')
 
 
 class DerivativeOf(models.Model):

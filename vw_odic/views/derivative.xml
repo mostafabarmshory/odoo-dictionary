@@ -7,6 +7,8 @@
 			<tree string="Derivative">
 				<field name="text" />
 				<field name="language" />
+				<field name="regions_ids" widget="many2many_tags" />
+				<field name="domains_ids" widget="many2many_tags" />
 			</tree>
 		</field>
 	</record>
@@ -21,6 +23,7 @@
 							<field name="text" />
 							<field name="language" />
 							<field name="regions_ids" widget="many2many_tags" />
+							<field name="domains_ids" widget="many2many_tags" />
 						</group>
 					</group>
 				</sheet>
@@ -46,6 +49,8 @@
 			<tree string="Derivative">
 				<field name="text" />
 				<field name="language" />
+				<field name="regions_ids" widget="many2many_tags" />
+				<field name="domains_ids" widget="many2many_tags" />
 			</tree>
 		</field>
 	</record>
@@ -60,6 +65,7 @@
 							<field name="text" />
 							<field name="language" />
 							<field name="regions_ids" widget="many2many_tags" />
+							<field name="domains_ids" widget="many2many_tags" />
 						</group>
 					</group>
 				</sheet>
