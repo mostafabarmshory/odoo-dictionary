@@ -24,3 +24,4 @@ class HeadwordEntry(models.Model):
         ('phrase', 'Phrase')
     ])
     pronunciations_ids = fields.One2many(comodel_name='vw_odic.pronunciation', inverse_name='headwordentry_id')
+    lexicalEntries_ids = fields.One2many(comodel_name='vw_odic.lexicalentry', inverse_name='headwordentry_id')

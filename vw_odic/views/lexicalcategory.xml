@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<odoo>
+	<record id="vw_odic.lexicalcategory_view_tree" model="ir.ui.view">
+		<field name="name">vw_odic.lexicalcategory.tree</field>
+		<field name="model">vw_odic.lexicalcategory</field>
+		<field name="arch" type="xml">
+			<tree string="Lexical Category">
+				<field name="text" />
+			</tree>
+		</field>
+	</record>
+	<record id="vw_odic_lexicalcategory_view_form" model="ir.ui.view">
+		<field name="name">vw_odic.lexicalcategory.form</field>
+		<field name="model">vw_odic.lexicalcategory</field>
+		<field name="arch" type="xml">
+			<form string="Lexical Category">
+				<sheet>
+					<group>
+						<group>
+							<field name="text" />
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id="vw_odic_lexicalcategory_view_search" model="ir.ui.view">
+		<field name="name">vw_odic.lexicalcategory.search</field>
+		<field name="model">vw_odic.lexicalcategory</field>
+		<field name="arch" type="xml">
+			<search string="Properties">
+				<field name="text" />
+			</search>
+		</field>
+	</record>
+	<record 
+		id="vw_odic_model_lexicalcategory_action"
+		model="ir.actions.act_window">
+		<field name="name">Lexical Category</field>
+		<field name="res_model">vw_odic.lexicalcategory</field>
+		<field name="view_mode">tree,form</field>
+		<field name="help" type="html">
+			<p>List of lexical category to manage.</p>
+		</field>
+	</record>
+	<menuitem
+		id="vw_odic_menu_advertisement_lexicalcategory"
+		parent="vw_odic_menu_settings"
+		name="Lexical Category"
+		action="vw_odic_model_lexicalcategory_action" />
+</odoo>

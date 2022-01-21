@@ -19,7 +19,9 @@
         "views/dashboard.xml",
         "views/headwordentry.xml",
         "views/pronunciation.xml",
-        "views/region.xml"
+        "views/region.xml",
+        "views/lexicalcategory.xml",
+        "views/lexicalentery.xml"
     ],
     'auto_install': False,
     'installable': True,

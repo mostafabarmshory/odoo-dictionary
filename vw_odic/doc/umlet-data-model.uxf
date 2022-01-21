@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.3.0">
+<diagram program="umlet" version="14.2">
   <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>360</x>
+      <x>368</x>
       <y>144</y>
       <w>128</w>
-      <h>80</h>
+      <h>104</h>
     </coordinates>
     <panel_attributes>HeadwordEntry
 --
@@ -18,7 +18,9 @@
 // Could be 'headword', 'inflection' or 'phrase' ,
 + type: string
 + word: string
-</panel_attributes>
+--
+
+bg=green</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -26,14 +28,13 @@
     <coordinates>
       <x>568</x>
       <y>288</y>
-      <w>192</w>
+      <w>176</w>
       <h>88</h>
     </coordinates>
-    <panel_attributes>// Group of lexicalEntries related to a specific 
-// result for a given word ID.
+    <panel_attributes>// Description of an entry for a particular part of speech
 LexicalEntry
 --
-// IANA language code ,
+// IANA language code
 + language: string
 // Abstract root form from which this lexicalEntry is derived. ,
 + root: string {optional}
@@ -41,30 +42,34 @@ LexicalEntry
 + text: string {optional}
 --
 --
-compounds (ArrayOfRelatedEntries, optional): 
+// compounds           (ArrayOfRelatedEntries, optional): 
+// derivativeOf        (ArrayOfRelatedEntries, optional): Other words from which this one derives ,
+// derivatives         (ArrayOfRelatedEntries, optional): Other words from which their Sense derives ,
+// grammaticalFeatures (GrammaticalFeaturesList, optional),
+// notes               (CategorizedTextList, optional),
+// phrasalVerbs        (ArrayOfRelatedEntries, optional): Other words from which their Sense derives ,
+// phrases             (ArrayOfRelatedEntries, optional): Other words from which their Sense derives ,
+// pronunciations      (PronunciationsList, optional),
+// variantForms        (VariantFormsList, optional): Various words that are used interchangeably depending on the context, e.g 'a' and 'an'
 
-derivativeOf (ArrayOfRelatedEntries, optional): Other words from which this one derives ,
-derivatives (ArrayOfRelatedEntries, optional): Other words from which their Sense derives ,
-
-grammaticalFeatures (GrammaticalFeaturesList, optional),
-
-notes (CategorizedTextList, optional),
-phrasalVerbs (ArrayOfRelatedEntries, optional): Other words from which their Sense derives ,
-phrases (ArrayOfRelatedEntries, optional): Other words from which their Sense derives ,
-pronunciations (PronunciationsList, optional),
-variantForms (VariantFormsList, optional): Various words that are used interchangeably depending on the context, e.g 'a' and 'an'</panel_attributes>
+bg=green</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>448</x>
-      <y>216</y>
-      <w>224</w>
-      <h>88</h>
+      <x>488</x>
+      <y>168</y>
+      <w>208</w>
+      <h>136</h>
     </coordinates>
-    <panel_attributes>lexicalEntries</panel_attributes>
-    <additional_attributes>10.0;10.0;260.0;90.0</additional_attributes>
+    <panel_attributes>// Group of lexicalEntries related to a specific 
+// result for a given word ID.
+lexicalEntries
+m1=1..1
+m2=0..n
+</panel_attributes>
+    <additional_attributes>10.0;20.0;220.0;20.0;220.0;150.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -86,34 +91,35 @@ variantForms (VariantFormsList, optional): Various words that are used interchan
 // TODO:
 // registers (registersList, optional): 
 
-</panel_attributes>
+bg=green</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>168</x>
-      <y>216</y>
-      <w>248</w>
-      <h>80</h>
+      <x>192</x>
+      <y>168</y>
+      <w>192</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>pronunciations
 m1=1..1
 m2=0..n</panel_attributes>
-    <additional_attributes>290.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>220.0;20.0;10.0;20.0;10.0;140.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>464</x>
-      <y>448</y>
+      <x>560</x>
+      <y>472</y>
       <w>232</w>
       <h>72</h>
     </coordinates>
-    <panel_attributes>Inline Model 2
+    <panel_attributes>Compond
 --
-id (string): The identifier of the word ,
-text (string)
+// The identifier of the word ,
+id: string
+text: string
 --
 //domains (domainsList, optional): A subject, discipline, or branch of knowledge particular to the Sense ,
 //language (string, optional): IANA language code specifying the language of the word ,
@@ -124,176 +130,25 @@ text (string)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>952</x>
-      <y>448</y>
-      <w>184</w>
-      <h>160</h>
-    </coordinates>
-    <panel_attributes>Entry
---
-// Identifies the homograph grouping. The last 
-// two digits identify different entries of the 
-// same homograph. The first one/two digits 
-// identify the homograph number. ,
-homographNumber (string, optional): 
---
-crossReferenceMarkers (arrayofstrings, optional): A grouping of crossreference notes. ,
-crossReferences (CrossReferencesList, optional),
-
-grammaticalFeatures (GrammaticalFeaturesList, optional),
-inflections (Array[InflectedForm], optional): A list of inflected forms for an Entry. ,
-
-
-
-variantForms (VariantFormsList, optional): Various words that are used interchangeably depending on the context, e.g 'a' and 'an'
-
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>768</x>
-      <y>448</y>
-      <w>136</w>
-      <h>64</h>
+      <x>944</x>
+      <y>312</y>
+      <w>144</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>LexicalCategory
 --
 + id: string
-+ text: string</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>488</x>
-      <y>8</y>
-      <w>176</w>
-      <h>104</h>
-    </coordinates>
-    <panel_attributes>InflectedForm
++ text: string
 --
-domains (domainsList, optional): A subject, discipline, or branch of knowledge particular to the Inflection ,
-grammaticalFeatures (GrammaticalFeaturesList, optional),
-inflectedForm (string): Canonical form of an inflection ,
-lexicalCategory (lexicalCategory, optional),
-pronunciations (PronunciationsList, optional),
-regions (regionsList, optional): A particular area in which the Inflection occurs, e.g. 'Great Britain' ,
-registers (registersList, optional): A level of language usage, typically with respect to formality. e.g. 'offensive', 'informal'
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1192</x>
-      <y>688</y>
-      <w>184</w>
-      <h>120</h>
-    </coordinates>
-    <panel_attributes>Sense
---
-// The id of the sense that is required for the
-// delete procedure ,
-+ id: string {optional}
 
-antonyms (SynonymsAntonyms, optional): antonym of word ,
-synonyms (SynonymsAntonyms, optional): synonym of word ,
-
-constructions (Array[inline_model_2], optional): A construction provides information about typical syntax used of this sense. Each construction may optionally have one or more examples. ,
-crossReferenceMarkers (arrayofstrings, optional): A grouping of crossreference notes. ,
-crossReferences (CrossReferencesList, optional),
-definitions (arrayofstrings, optional): A list of statements of the exact meaning of a word ,
-domainClasses (domainClassesList, optional): Domain classes particular to the Sense ,
-domains (domainsList, optional): A subject, discipline, or branch of knowledge particular to the Sense ,
-
-examples (ExamplesList, optional),
-inflections (Array[InflectedForm], optional): A list of inflected forms for a sense. ,
-
-pronunciations (PronunciationsList, optional),
-regions (regionsList, optional): A particular area in which the Sense occurs, e.g. 'Great Britain' ,
-registers (registersList, optional): A level of language usage, typically with respect to formality. e.g. 'offensive', 'informal' ,
-semanticClasses (semanticClassesList, optional): Semantic classes particular to the Sense ,
-shortDefinitions (arrayofstrings, optional): A list of short statements of the exact meaning of a word ,
-subsenses (Array[Sense], optional): Ordered list of subsenses of a sense ,
-thesaurusLinks (Array[thesaurusLink], optional): Ordered list of links to the Thesaurus Dictionary ,
-variantForms (VariantFormsList, optional): Various words that are used interchangeably depending on the context, e.g 'duck' and 'duck boat'
-
-</panel_attributes>
+bg=green</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1232</x>
-      <y>384</y>
-      <w>128</w>
-      <h>64</h>
-    </coordinates>
-    <panel_attributes>CategorizedText
---
-id: string
-text: string
-type: string</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>736</x>
-      <y>112</y>
-      <w>80</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>Inline Model 4
---
-id (string, optional): The identifier of the word ,
-text (string): A note text ,
-type (string): The descriptive category of the text
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>376</x>
-      <y>24</y>
-      <w>80</w>
-      <h>88</h>
-    </coordinates>
-    <panel_attributes>Inline Model 5
---
-domains (domainsList, optional): A subject, discipline, or branch of knowledge particular to the Sense ,
-notes (CategorizedTextList, optional),
-pronunciations (PronunciationsList, optional): A grouping of pronunciation information ,
-regions (regionsList, optional): A particular area in which the variant form occurs, e.g. 'Great Britain' ,
-registers (registersList, optional): A level of language usage, typically with respect to formality. e.g. 'offensive', 'informal' ,
-text (string)
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>120</x>
-      <y>80</y>
-      <w>80</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>Inline Model 6 
---
-id (string): The word id of the co-occurrence ,
-text (string): The word of the co-occurrence ,
-type (string): The type of relation between the two words. Possible values are 'close match', 'related', 'see also', 'variant spelling', and 'abbreviation' in case of crossreferences, or 'pre', 'post' in case of collocates.
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>376</x>
-      <y>624</y>
+      <x>240</x>
+      <y>632</y>
       <w>128</w>
       <h>40</h>
     </coordinates>
@@ -302,85 +157,6 @@ type (string): The type of relation between the two words. Possible values are '
 // The construction text
 text:string 
 </panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>968</x>
-      <y>248</y>
-      <w>80</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>thesaurusLink
---
-entry_id (string): identifier of a word ,
-sense_id (string): identifier of a sense
-}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>688</x>
-      <y>48</y>
-      <w>80</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>Inline Model 7
---
-id (string),
-text (string)
-}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>656</x>
-      <y>176</y>
-      <w>80</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>Inline Model 8
---
-id (string),
-text (string)
-}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>240</x>
-      <y>72</y>
-      <w>80</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>Inline Model 9 
---
-id (string),
-text (string)
-}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>896</x>
-      <y>80</y>
-      <w>80</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>Inline Model 10
---
-domains (domainsList, optional),
-id (string, optional),
-language (string, optional),
-regions (regionsList, optional): A particular area in which the Sense occurs, e.g. 'Great Britain' ,
-registers (registersList, optional): A level of language usage, typically with respect to formality. e.g. 'offensive', 'informal' ,
-text (string)
-}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -395,26 +171,6 @@ text (string)
 --
 + id: string
 + text: string
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>272</x>
-      <y>0</y>
-      <w>80</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>Inline Model 12
---
-definitions (arrayofstrings, optional): A list of statements of the exact meaning of a word ,
-domains (domainsList, optional): A subject, discipline, or branch of knowledge particular to the Sense ,
-notes (CategorizedTextList, optional),
-regions (regionsList, optional): A particular area in which the pronunciation occurs, e.g. 'Great Britain' ,
-registers (registersList, optional): A level of language usage, typically with respect to formality. e.g. 'offensive', 'informal' ,
-senseIds (arrayofstrings, optional): The list of sense identifiers related to the example. Provided in the sentences endpoint only. ,
-text (string)
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -472,7 +228,9 @@ dialects</panel_attributes>
     <panel_attributes>Region
 --
 + id: string
-+ text: string </panel_attributes>
++ text: string
+
+bg=green</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -520,22 +278,22 @@ registers</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>568</x>
+      <x>664</x>
       <y>368</y>
-      <w>120</w>
-      <h>96</h>
+      <w>80</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>// Other words from which their Sense derives ,
 compounds</panel_attributes>
-    <additional_attributes>130.0;10.0;10.0;100.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>680</x>
-      <y>368</y>
-      <w>168</w>
-      <h>96</h>
+      <x>736</x>
+      <y>320</y>
+      <w>224</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>// A linguistic category of words (or more precisely
 // lexical items), generally defined by the syntactic 
@@ -544,29 +302,7 @@ compounds</panel_attributes>
 lexicalCategory
 m1=0..n
 m2=0..1</panel_attributes>
-    <additional_attributes>10.0;10.0;190.0;100.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>712</x>
-      <y>368</y>
-      <w>312</w>
-      <h>96</h>
-    </coordinates>
-    <panel_attributes>enteries</panel_attributes>
-    <additional_attributes>10.0;10.0;370.0;100.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>752</x>
-      <y>328</y>
-      <w>288</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>derivatives</panel_attributes>
-    <additional_attributes>10.0;30.0;340.0;10.0</additional_attributes>
+    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -581,66 +317,6 @@ m2=0..1</panel_attributes>
 + id: string
 + text: string</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>776</x>
-      <y>600</y>
-      <w>240</w>
-      <h>160</h>
-    </coordinates>
-    <panel_attributes>etymologies
-m1=1..1
-m2=0..n</panel_attributes>
-    <additional_attributes>280.0;10.0;10.0;180.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1128</x>
-      <y>440</y>
-      <w>176</w>
-      <h>88</h>
-    </coordinates>
-    <panel_attributes>notes
-m1=0..n</panel_attributes>
-    <additional_attributes>200.0;10.0;10.0;90.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>288</x>
-      <y>320</y>
-      <w>680</w>
-      <h>248</h>
-    </coordinates>
-    <panel_attributes>pronunciations</panel_attributes>
-    <additional_attributes>10.0;10.0;830.0;290.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1032</x>
-      <y>600</y>
-      <w>272</w>
-      <h>104</h>
-    </coordinates>
-    <panel_attributes>// Complete list of senses ,
-senses</panel_attributes>
-    <additional_attributes>10.0;10.0;320.0;110.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1304</x>
-      <y>440</y>
-      <w>56</w>
-      <h>264</h>
-    </coordinates>
-    <panel_attributes>notes
-m1=0..n</panel_attributes>
-    <additional_attributes>20.0;10.0;10.0;310.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -661,52 +337,40 @@ m2=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>352</x>
+      <x>296</x>
       <y>512</y>
-      <w>104</w>
-      <h>128</h>
+      <w>96</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes>// A level of language usage, typically with respect 
 // to formality. e.g. 'offensive', 'informal'
 registers</panel_attributes>
-    <additional_attributes>10.0;10.0;110.0;140.0</additional_attributes>
+    <additional_attributes>80.0;10.0;10.0;150.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>208</x>
       <y>512</y>
-      <w>224</w>
-      <h>128</h>
+      <w>96</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes>// A particular area in which the pronunciation 
 // occurs, e.g. 'Great Britain' ,
 m1=0..n
 m2=0..n
 regions</panel_attributes>
-    <additional_attributes>260.0;140.0;10.0;10.0</additional_attributes>
+    <additional_attributes>90.0;150.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>152</x>
-      <y>632</y>
-      <w>240</w>
-      <h>40</h>
+      <y>640</y>
+      <w>104</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>domains</panel_attributes>
-    <additional_attributes>280.0;20.0;10.0;30.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>496</x>
-      <y>408</y>
-      <w>752</w>
-      <h>248</h>
-    </coordinates>
-    <panel_attributes>notes
-m1=0..n</panel_attributes>
-    <additional_attributes>920.0;10.0;10.0;290.0</additional_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>
