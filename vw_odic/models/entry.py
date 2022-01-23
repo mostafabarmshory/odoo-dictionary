@@ -23,7 +23,7 @@ class Entry(models.Model):
     _description = "Group of domain related to words."
     _rec_name = 'homographNumber'
     
-    homographNumber= fields.Char(
+    homographNumber = fields.Char(
         size=512,
         trim=True,
         translate=False,
@@ -48,4 +48,8 @@ class Entry(models.Model):
         inverse_name='entry_id',
         string='Etymologies',
         help="The origin of the word and the way in which its meaning has changed throughout history")
+    inflections_ids = fields.Many2many(
+        string='Inflections',
+        comodel_name='vw_odic.headwordentry',
+        help="A list of inflected forms for an Entry.")
 

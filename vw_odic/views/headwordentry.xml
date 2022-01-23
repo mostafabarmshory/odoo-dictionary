@@ -4,7 +4,7 @@
 		<field name="name">vw_odic.headwordentry.tree</field>
 		<field name="model">vw_odic.headwordentry</field>
 		<field name="arch" type="xml">
-			<tree string="Words">
+			<tree string="Headwords">
 				<field name="word" />
 				<field name="language" />
 				<field name="type" />
@@ -15,7 +15,7 @@
 		<field name="name">vw_odic.headwordentry.form</field>
 		<field name="model">vw_odic.headwordentry</field>
 		<field name="arch" type="xml">
-			<form string="Word">
+			<form string="Headword">
 				<sheet>
 					<group>
 						<group>
@@ -55,16 +55,16 @@
 	<record 
 		id="vw_odic_model_headwordentry_action"
 		model="ir.actions.act_window">
-		<field name="name">Words</field>
+		<field name="name">Headwords</field>
 		<field name="res_model">vw_odic.headwordentry</field>
 		<field name="view_mode">tree,form,activity</field>
 		<field name="help" type="html">
-			<p>List of dictionaries to manage.</p>
+			<p>List of headwords to manage.</p>
 		</field>
 	</record>
 	<menuitem
 		id="vw_odic_menu_advertisement_headwordentry"
 		parent="vw_odic_menu_dictionary"
-		name="Words"
+		name="Headwords"
 		action="vw_odic_model_headwordentry_action" />
 </odoo>

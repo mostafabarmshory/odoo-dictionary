@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.2">
+<diagram program="umlet" version="14.3.0">
   <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
@@ -20,7 +20,7 @@
 + word: string
 --
 
-bg=green</panel_attributes>
+bg=red</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -270,7 +270,7 @@ registers</panel_attributes>
     <coordinates>
       <x>664</x>
       <y>256</y>
-      <w>72</w>
+      <w>80</w>
       <h>120</h>
     </coordinates>
     <panel_attributes>// Other words from which their Sense derives
