@@ -12,3 +12,6 @@ access_vw_odic_notetype,access_vw_odic_notetype,model_vw_odic_notetype,base.grou
 access_vw_odic_entry,access_vw_odic_entry,model_vw_odic_entry,base.group_user,1,1,1,1
 access_vw_odic_entrynote,access_vw_odic_entrynote,model_vw_odic_entrynote,base.group_user,1,1,1,1
 access_vw_odic_etymology,access_vw_odic_etymology,model_vw_odic_etymology,base.group_user,1,1,1,1
+access_vw_odic_sense,access_vw_odic_sense,model_vw_odic_sense,base.group_user,1,1,1,1
+access_vw_odic_sensedefinition,access_vw_odic_sensedefinition,model_vw_odic_sensedefinition,base.group_user,1,1,1,1
+access_vw_odic_example,access_vw_odic_example,model_vw_odic_example,base.group_user,1,1,1,1

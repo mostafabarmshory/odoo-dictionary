@@ -29,6 +29,9 @@
 						<page string="Pronunciations">
 							<field name="pronunciations_ids" />
 						</page>
+						<page string="Senses">
+							<field name="senses_ids" />
+						</page>
 						<page string="Etymologies">
 							<field name="etymologies_ids" />
 						</page>

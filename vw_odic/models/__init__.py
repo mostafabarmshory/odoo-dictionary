@@ -13,4 +13,7 @@ from . import derivative
 from . import entry
 from . import entrynote
 from . import etymology
+from . import sense
+from . import definition
+from . import example
 

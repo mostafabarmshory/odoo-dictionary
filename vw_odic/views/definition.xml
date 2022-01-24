@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<odoo>
+	<record id="vw_odic.sensedefinition_view_tree" model="ir.ui.view">
+		<field name="name">vw_odic.sensedefinition.tree</field>
+		<field name="model">vw_odic.sensedefinition</field>
+		<field name="arch" type="xml">
+			<tree 
+				string="Definitions"
+				editable="top"
+				multi_edit="1"
+				default_order="id desc">
+				<field name="text" />
+			</tree>
+		</field>
+	</record>
+	<record id="vw_odic_sensedefinition_view_form" model="ir.ui.view">
+		<field name="name">vw_odic.sensedefinition.form</field>
+		<field name="model">vw_odic.sensedefinition</field>
+		<field name="arch" type="xml">
+			<form string="Definition">
+				<sheet>
+					<group>
+						<group>
+							<field name="text" />
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id="vw_odic_sensedefinition_view_search" model="ir.ui.view">
+		<field name="name">vw_odic.sensedefinition.search</field>
+		<field name="model">vw_odic.sensedefinition</field>
+		<field name="arch" type="xml">
+			<search string="Properties">
+				<field name="text" />
+			</search>
+		</field>
+	</record>
+</odoo>

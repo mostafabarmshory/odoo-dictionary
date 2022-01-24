@@ -52,4 +52,8 @@ class Entry(models.Model):
         string='Inflections',
         comodel_name='vw_odic.headwordentry',
         help="A list of inflected forms for an Entry.")
-
+    senses_ids = fields.One2many(
+        comodel_name='vw_odic.sense',
+        inverse_name='entry_id',
+        string='Senses',
+        help="Complete list of senses for bilingual entries")

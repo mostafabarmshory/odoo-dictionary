@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<odoo>
+	<record 
+		id="vw_odic.sense_view_tree"
+		model="ir.ui.view">
+		<field name="name">vw_odic.sense.tree</field>
+		<field name="model">vw_odic.sense</field>
+		<field name="arch" type="xml">
+			<tree 
+				string="Senses"
+				default_order="entry_id desc">
+				<field name="entry_id" />
+			</tree>
+		</field>
+	</record>
+	<record id="vw_odic_sense_view_form" model="ir.ui.view">
+		<field name="name">vw_odic.sense.form</field>
+		<field name="model">vw_odic.sense</field>
+		<field name="arch" type="xml">
+			<form string="Sense">
+				<sheet>
+					<group>
+						<group>
+							<field name="entry_id" />
+						</group>
+					</group>
+					<notebook>
+						<page string="Definitions">
+							<field name="definitions_ids" />
+						</page>
+						<page string="Examples">
+							<field name="examples_ids" />
+						</page>
+						<page string="Synonyms">
+							<field name="synonyms_ids" />
+						</page>
+					</notebook>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id="vw_odic_sense_view_search" model="ir.ui.view">
+		<field name="name">vw_odic.sense.search</field>
+		<field name="model">vw_odic.sense</field>
+		<field name="arch" type="xml">
+			<search string="Senses">
+				<field name="entry_id" />
+			</search>
+		</field>
+	</record>
+	<record
+			id="vw_odic.sense_view_action"
+			model="ir.actions.act_window">
+		<field name="name">Senses</field>
+		<field name="res_model">vw_odic.sense</field>
+		<field name="view_mode">tree,form,activity</field>
+		<field name="help" type="html">
+			<p>List of senses to manage.</p>
+		</field>
+	</record>
+	<menuitem
+			id="vw_odic_menu_advertisement_senses"
+			parent="vw_odic_menu_dictionary"
+			name="Senses"
+			action="vw_odic.sense_view_action" />
+</odoo>

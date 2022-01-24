@@ -1,7 +1,9 @@
 from odoo import models, fields
 
+
 class HeadwordEntry(models.Model):
-    #TODO: 2022, Masood: Missed field
+
+    # TODO: 2022, Masood: Missed field
     # - lexicalEntries
     _name = "vw_odic.headwordentry"
     _description = "Group of lexicalEntries related to a specific result for a given word ID."
@@ -25,7 +27,8 @@ class HeadwordEntry(models.Model):
         ('phrase', 'Phrase')
     ])
     pronunciations_ids = fields.Many2many(
-        comodel_name='vw_odic.pronunciation', 
+        comodel_name='vw_odic.pronunciation',
+        relation="vw_odic_headwordpronunciation",
         string='Pronunciations',
         help="Other words from which their Sense derives")
     lexicalEntries_ids = fields.One2many(

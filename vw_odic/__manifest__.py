@@ -30,6 +30,8 @@
         "views/derivative.xml",
         "views/entry.xml",
         "views/etymology.xml",
+        "views/sense.xml",
+        "views/definition.xml",
     ],
     'auto_install': False,
     'installable': True,
