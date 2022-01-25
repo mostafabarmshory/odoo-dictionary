@@ -11,13 +11,21 @@
 	<menuitem
 		id="vw_odic_menu_dictionary"
 		name="Dictionary" 
-		parent="vw_odic_menu_root"/>
+		parent="vw_odic_menu_root"
+		sequence="1"/>
+	<menuitem
+			id="vw_odic_menu_multimedia"
+			name="Multimedia"
+			parent="vw_odic_menu_root"
+			sequence="2"/>
 	<menuitem
 		id="vw_odic_menu_report"
 		name="Report" 
-		parent="vw_odic_menu_root"/>
+		parent="vw_odic_menu_root"
+		sequence="3"/>
 	<menuitem
 		id="vw_odic_menu_settings"
 		name="Settings" 
-		parent="vw_odic_menu_root"/>
+		parent="vw_odic_menu_root"
+		sequence="4"/>
 </odoo>

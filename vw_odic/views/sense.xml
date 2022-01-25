@@ -34,6 +34,9 @@
 						<page string="Synonyms">
 							<field name="synonyms_ids" />
 						</page>
+						<page string="Antonyms">
+							<field name="antonyms_ids" />
+						</page>
 					</notebook>
 				</sheet>
 			</form>

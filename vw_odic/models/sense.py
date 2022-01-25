@@ -8,6 +8,18 @@ class Sense(models.Model):
     # - thesaurusLinks
     # - notes
     # - constructions
+    # - crossReferenceMarkers
+    # - crossReferences
+    # - domainClasses
+    # - domains
+    # - etymologies
+    # - pronunciations
+    # - regions
+    # - registers
+    # - semanticClasses
+    # - variantForms
+
+    # - subsenses
 
     _name = "vw_odic.sense"
     _description = "Complete list of senses for bilingual entries"
@@ -30,6 +42,15 @@ class Sense(models.Model):
         relation="vw_odic_headwordsense_synonyms",
         string="Synonyms",
         help="Synonyms of word")
+    antonyms_ids = fields.Many2many(
+        comodel_name="vw_odic.headwordentry",
+        relation="vw_odic_headwordsense_antonyms",
+        string="Antonyms",
+        help="Antonyms of word")
+    inflections_ids = fields.Many2many(
+        string='Inflections',
+        comodel_name='vw_odic.headwordentry',
+        help="A list of inflected forms for a word.")
 
     
 

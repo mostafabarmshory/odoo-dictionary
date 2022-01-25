@@ -51,7 +51,7 @@
 	</record>
 	<menuitem
 		id="vw_odic_menu_advertisement_pronunciation"
-		parent="vw_odic_menu_dictionary"
+		parent="vw_odic_menu_multimedia"
 		name="Pronunciations"
 		action="vw_odic_model_pronunciation_action" />
 </odoo>
