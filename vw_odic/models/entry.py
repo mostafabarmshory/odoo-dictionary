@@ -22,6 +22,12 @@ class Entry(models.Model):
     _name = "vw_odic.entry"
     _description = "Group of domain related to words."
     _rec_name = 'homographNumber'
+    _inherit = [
+        'portal.mixin',
+        'mail.thread.cc',
+        'mail.activity.mixin',
+        'rating.mixin'
+    ]
     
     homographNumber = fields.Char(
         size=512,

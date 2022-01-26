@@ -14,6 +14,10 @@ from . import entry
 from . import entrynote
 from . import etymology
 from . import sense
-from . import definition
+from . import sensedefinition
 from . import example
+from . import exampleNote
+from . import exampledefinition
+from . import register
+
 

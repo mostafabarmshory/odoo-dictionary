@@ -10,6 +10,8 @@
 				string="Senses"
 				default_order="entry_id desc">
 				<field name="entry_id" />
+				<field name="antonyms_ids" widget="many2many_tags" />
+				<field name="synonyms_ids" widget="many2many_tags" />
 			</tree>
 		</field>
 	</record>
@@ -22,6 +24,8 @@
 					<group>
 						<group>
 							<field name="entry_id" />
+							<field name="antonyms_ids" widget="many2many_tags" />
+							<field name="synonyms_ids" widget="many2many_tags" />
 						</group>
 					</group>
 					<notebook>
@@ -30,12 +34,6 @@
 						</page>
 						<page string="Examples">
 							<field name="examples_ids" />
-						</page>
-						<page string="Synonyms">
-							<field name="synonyms_ids" />
-						</page>
-						<page string="Antonyms">
-							<field name="antonyms_ids" />
 						</page>
 					</notebook>
 				</sheet>

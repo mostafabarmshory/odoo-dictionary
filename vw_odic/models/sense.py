@@ -23,6 +23,12 @@ class Sense(models.Model):
 
     _name = "vw_odic.sense"
     _description = "Complete list of senses for bilingual entries"
+    _inherit = [
+        'portal.mixin',
+        'mail.thread.cc',
+        'mail.activity.mixin',
+        'rating.mixin'
+    ]
 
     entry_id = fields.Many2one(
         ondelete='cascade',
@@ -36,6 +42,10 @@ class Sense(models.Model):
         help="Related definition")
     examples_ids = fields.Many2many(
         comodel_name='vw_odic.example',
+        relation="vw_odic_example_sense",
+        column1="sense_id",
+        column2="example_id",
+        string='Examples',
         help="Related examples")
     synonyms_ids = fields.Many2many(
         comodel_name="vw_odic.headwordentry",
