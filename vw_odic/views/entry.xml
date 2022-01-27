@@ -9,7 +9,9 @@
 			<tree 
 				string="Entries"
 				default_order="homographNumber desc">
-				<field name="homographNumber" />
+				<field name="id" />
+				<field name="text" />
+				<field name="lexical" />
 			</tree>
 		</field>
 	</record>

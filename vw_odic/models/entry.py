@@ -1,4 +1,4 @@
-from odoo import models, fields
+from odoo import api, models, fields
 
 
 class Entry(models.Model):
@@ -21,7 +21,7 @@ class Entry(models.Model):
     # variantForms:
     _name = "vw_odic.entry"
     _description = "Group of domain related to words."
-    _rec_name = 'homographNumber'
+    _rec_name = 'text'
     _inherit = [
         'portal.mixin',
         'mail.thread.cc',
@@ -63,3 +63,26 @@ class Entry(models.Model):
         inverse_name='entry_id',
         string='Senses',
         help="Complete list of senses for bilingual entries")
+    
+    text = fields.Char(compute="_compute_text")
+    lexical = fields.Char(compute="_compute_lexical")
+    
+    @api.depends("lexicalEntry_id.text")
+    def _compute_text(self):
+        """
+        There is no suitable field to use as label for entry. We compute a text
+        here.
+        """
+        for record in self:
+            record.text = record.lexicalEntry_id.text
+            
+    
+    @api.depends("lexicalEntry_id.lexicalCategory_id.text")
+    def _compute_lexical(self):
+        """
+        There is no suitable field to use as label for entry. We compute a text
+        here.
+        """
+        for record in self:
+            record.lexical = record.lexicalEntry_id.lexicalCategory_id.text
+            
