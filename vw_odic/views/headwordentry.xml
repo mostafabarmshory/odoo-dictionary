@@ -31,6 +31,9 @@
 						<page string="Pronunciations">
 							<field name="pronunciations_ids" />
 						</page>
+						<page string="Pictures">
+							<field name="pictures_ids" />
+						</page>
 					</notebook>
 				</sheet>
 				<div class="oe_chatter">
