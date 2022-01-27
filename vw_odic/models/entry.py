@@ -64,8 +64,8 @@ class Entry(models.Model):
         string='Senses',
         help="Complete list of senses for bilingual entries")
     
-    text = fields.Char(compute="_compute_text")
-    lexical = fields.Char(compute="_compute_lexical")
+    text = fields.Text(compute="_compute_text")
+    lexical = fields.Text(compute="_compute_lexical")
     
     @api.depends("lexicalEntry_id.text")
     def _compute_text(self):
