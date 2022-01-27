@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<odoo>
+	<record id="vw_odic.picture_view_tree" model="ir.ui.view">
+		<field name="name">vw_odic.picture.tree</field>
+		<field name="model">vw_odic.picture</field>
+		<field name="arch" type="xml">
+			<tree string="pictures">
+				<field name="picture" />
+				<field name="text" />
+				<field name="regions_ids" widget="many2many_tags" />
+			</tree>
+		</field>
+	</record>
+	<record id="vw_odic_picture_view_form" model="ir.ui.view">
+		<field name="name">vw_odic.picture.form</field>
+		<field name="model">vw_odic.picture</field>
+		<field name="arch" type="xml">
+			<form string="picture">
+				<sheet>
+					<group>
+						<group>
+							<field name="picture" />
+							<field name="text" />
+							<field name="regions_ids" widget="many2many_tags" />
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id="vw_odic_picture_view_search" model="ir.ui.view">
+		<field name="name">vw_odic.picture.search</field>
+		<field name="model">vw_odic.picture</field>
+		<field name="arch" type="xml">
+			<search string="Properties">
+				<field name="picture" />
+				<field name="text" />
+			</search>
+		</field>
+	</record>
+	<record 
+		id="vw_odic_model_picture_action"
+		model="ir.actions.act_window">
+		<field name="name">pictures</field>
+		<field name="res_model">vw_odic.picture</field>
+		<field name="view_mode">tree,form</field>
+		<field name="help" type="html">
+			<p>List of pictures to manage.</p>
+		</field>
+	</record>
+	<menuitem
+		id="vw_odic_menu_advertisement_picture"
+		parent="vw_odic_menu_multimedia"
+		name="pictures"
+		action="vw_odic_model_picture_action" />
+</odoo>

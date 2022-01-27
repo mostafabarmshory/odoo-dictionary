@@ -20,6 +20,7 @@ class HeadwordEntry(models.Model):
     _rec_name = 'word'
 
     word = fields.Char(size=1024, trim=True, translate=False, required=True)
+    language = fields.Char(size=1024, trim=True, translate=False, required=True)
     type = fields.Selection([
         ('headword', 'Headword'),
         ('inflection', 'Inflection'),
@@ -30,6 +31,11 @@ class HeadwordEntry(models.Model):
         relation="vw_odic_headwordpronunciation",
         string='Pronunciations',
         help="Other words from which their Sense derives")
+    pictures_ids = fields.Many2many(
+        comodel_name='vw_odic.picture',
+        relation="vw_odic_hwentry_picture",
+        string='Pictures',
+        help="Related pictures to the headword")
     lexicalEntries_ids = fields.One2many(
         comodel_name='vw_odic.lexicalentry', 
         inverse_name='headwordentry_id')

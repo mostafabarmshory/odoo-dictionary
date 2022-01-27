@@ -33,7 +33,7 @@
         "views/sense.xml",
         "views/definition.xml",
         "views/example.xml",
-
+        "views/picture.xml",
     ],
     'auto_install': False,
     'installable': True,
