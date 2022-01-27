@@ -19,3 +19,4 @@ access_vw_odic_exampledefinition,access_vw_odic_exampledefinition,model_vw_odic_
 access_vw_odic_examplenote,access_vw_odic_examplenote,model_vw_odic_examplenote,base.group_user,1,1,1,1
 access_vw_odic_register,access_vw_odic_register,model_vw_odic_register,base.group_user,1,1,1,1
 access_vw_odic_picture,access_vw_odic_picture,model_vw_odic_picture,base.group_user,1,1,1,1
+access_vw_odic_dictionary,access_vw_odic_dictionary,model_vw_odic_dictionary,base.group_user,1,1,1,1

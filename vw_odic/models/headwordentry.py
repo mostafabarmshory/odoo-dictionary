@@ -10,12 +10,12 @@ class HeadwordEntry(models.Model):
     # TOOD: 2022, maso: check the field _date_name 
     _inherit = [
         'portal.mixin', 
-        'mail.thread.cc', 
+        'mail.thread.cc',
         'mail.activity.mixin', 
         'rating.mixin'
     ]
     _mail_post_access = 'read'
-    _order = "language desc, id desc"
+    _order = "dictionary_id desc, id desc"
     _check_company_auto = True
     _rec_name = 'word'
 
@@ -39,3 +39,7 @@ class HeadwordEntry(models.Model):
     lexicalEntries_ids = fields.One2many(
         comodel_name='vw_odic.lexicalentry', 
         inverse_name='headwordentry_id')
+    dictionary_id = fields.Many2one(
+        required=True,
+        comodel_name='vw_odic.dictionary',
+        help="Related dictionary")

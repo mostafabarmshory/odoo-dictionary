@@ -20,5 +20,6 @@ from . import exampleNote
 from . import exampledefinition
 from . import register
 from . import picture
+from . import dictionary
 
 
