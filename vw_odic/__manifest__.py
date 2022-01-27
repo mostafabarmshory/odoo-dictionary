@@ -33,6 +33,7 @@
         "views/sense.xml",
         "views/definition.xml",
         "views/example.xml",
+        "views/dictionary.xml",
 
     ],
     'auto_install': False,
