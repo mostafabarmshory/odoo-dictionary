@@ -7,4 +7,3 @@ class Domain(models.Model):
     _rec_name = 'text'
 
     text = fields.Char(size=256, trim=True, translate=False, required=True)
-

@@ -20,7 +20,6 @@ class HeadwordEntry(models.Model):
     _rec_name = 'word'
 
     word = fields.Char(size=1024, trim=True, translate=False, required=True)
-    language = fields.Char(size=8, trim=True, translate=False, required=True)
     type = fields.Selection([
         ('headword', 'Headword'),
         ('inflection', 'Inflection'),

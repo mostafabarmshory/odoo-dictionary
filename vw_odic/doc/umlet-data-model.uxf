@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>7</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>322</x>
-      <y>84</y>
-      <w>112</w>
-      <h>98</h>
+      <x>368</x>
+      <y>112</y>
+      <w>128</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>HeadwordEntry
 --
@@ -26,10 +26,10 @@ bg=red</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>497</x>
-      <y>210</y>
-      <w>154</w>
-      <h>77</h>
+      <x>568</x>
+      <y>256</y>
+      <w>176</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>// Description of an entry for a particular part of speech
 LexicalEntry
@@ -58,10 +58,10 @@ bg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>427</x>
-      <y>105</y>
-      <w>182</w>
-      <h>119</h>
+      <x>488</x>
+      <y>136</y>
+      <w>208</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes>// Group of lexicalEntries related to a specific 
 // result for a given word ID.
@@ -74,10 +74,10 @@ m2=0..n
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>84</x>
-      <y>203</y>
-      <w>175</w>
-      <h>70</h>
+      <x>96</x>
+      <y>248</y>
+      <w>200</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>Pronunciations
 --
@@ -97,10 +97,10 @@ bg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>168</x>
-      <y>105</y>
-      <w>168</w>
-      <h>112</h>
+      <x>192</x>
+      <y>136</y>
+      <w>192</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>pronunciations
 m1=1..1
@@ -110,10 +110,10 @@ m2=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>490</x>
-      <y>371</y>
-      <w>140</w>
-      <h>63</h>
+      <x>560</x>
+      <y>440</y>
+      <w>160</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>Derivative
 --
@@ -133,10 +133,10 @@ bg=green
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>826</x>
-      <y>231</y>
-      <w>126</w>
-      <h>49</h>
+      <x>944</x>
+      <y>280</y>
+      <w>144</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>LexicalCategory
 --
@@ -150,25 +150,26 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>133</x>
-      <y>511</y>
-      <w>112</w>
-      <h>35</h>
+      <x>152</x>
+      <y>600</y>
+      <w>128</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>Example
 --
 // The construction text
-text:string 
++ text:string 
+bg=red
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>497</x>
-      <y>511</y>
-      <w>105</w>
-      <h>49</h>
+      <x>568</x>
+      <y>600</y>
+      <w>120</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>Domain
 --
@@ -183,9 +184,9 @@ bg=blue</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>371</y>
-      <w>119</w>
-      <h>42</h>
+      <y>440</y>
+      <w>136</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>Dialect
 --
@@ -196,10 +197,10 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>49</x>
-      <y>266</y>
-      <w>126</w>
-      <h>119</h>
+      <x>56</x>
+      <y>320</y>
+      <w>144</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes>// A local or regional variation where the 
 // pronunciation occurs, e.g. 'British English' ,
@@ -210,10 +211,10 @@ dialects</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>126</x>
-      <y>371</y>
-      <w>119</w>
-      <h>42</h>
+      <x>144</x>
+      <y>440</y>
+      <w>136</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>Region
 --
@@ -226,10 +227,10 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>175</x>
-      <y>266</y>
-      <w>49</w>
-      <h>119</h>
+      <x>200</x>
+      <y>320</y>
+      <w>56</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes>// A particular area in which the pronunciation 
 // occurs, e.g. 'Great Britain' ,
@@ -241,37 +242,38 @@ regions</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>196</x>
-      <y>266</y>
-      <w>154</w>
-      <h>70</h>
+      <x>224</x>
+      <y>320</y>
+      <w>168</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>// A level of language usage, typically with respect 
 // to formality. e.g. 'offensive', 'informal'
 registers</panel_attributes>
-    <additional_attributes>10.0;10.0;200.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;190.0;70.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>294</x>
-      <y>322</y>
-      <w>119</w>
-      <h>42</h>
+      <x>328</x>
+      <y>376</y>
+      <w>136</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>Register
 --
 + id: string
-+ text: string </panel_attributes>
++ text: string 
+bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>581</x>
-      <y>280</y>
-      <w>70</w>
-      <h>105</h>
+      <x>664</x>
+      <y>336</y>
+      <w>80</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>// Other words from which their Sense derives
 derivatives
@@ -282,10 +284,10 @@ m2=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>644</x>
-      <y>238</y>
-      <w>196</w>
-      <h>35</h>
+      <x>736</x>
+      <y>288</y>
+      <w>224</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>// A linguistic category of words (or more precisely
 // lexical items), generally defined by the syntactic 
@@ -299,23 +301,23 @@ m2=0..1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>182</x>
-      <y>357</y>
-      <w>182</w>
-      <h>168</h>
+      <x>208</x>
+      <y>416</y>
+      <w>200</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes>// A level of language usage, typically with respect 
 // to formality. e.g. 'offensive', 'informal'
 registers</panel_attributes>
-    <additional_attributes>240.0;10.0;10.0;220.0</additional_attributes>
+    <additional_attributes>230.0;10.0;10.0;230.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>161</x>
-      <y>406</y>
-      <w>63</w>
-      <h>119</h>
+      <x>184</x>
+      <y>480</y>
+      <w>72</w>
+      <h>136</h>
     </coordinates>
     <panel_attributes>// A particular area in which the pronunciation 
 // occurs, e.g. 'Great Britain' ,
@@ -327,10 +329,10 @@ regions</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>238</x>
-      <y>511</y>
-      <w>273</w>
-      <h>42</h>
+      <x>272</x>
+      <y>600</y>
+      <w>312</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>domains
 m1=0..n
@@ -340,10 +342,10 @@ m2=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>238</x>
-      <y>385</y>
-      <w>266</w>
-      <h>42</h>
+      <x>272</x>
+      <y>456</y>
+      <w>304</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>// A particular area in which the pronunciation 
 // occurs, e.g. 'Great Britain' ,
@@ -355,23 +357,23 @@ regions</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>406</x>
-      <y>336</y>
-      <w>98</w>
-      <h>70</h>
+      <x>456</x>
+      <y>392</y>
+      <w>120</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>// A level of language usage, typically with respect 
 // to formality. e.g. 'offensive', 'informal'
 registers</panel_attributes>
-    <additional_attributes>10.0;10.0;120.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;130.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>427</x>
-      <y>161</y>
-      <w>112</w>
-      <h>63</h>
+      <x>488</x>
+      <y>200</y>
+      <w>128</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>// Group of lexicalEntries related to a specific 
 // result for a given word ID.
@@ -384,10 +386,10 @@ m2=0..n
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>427</x>
-      <y>133</y>
-      <w>154</w>
-      <h>91</h>
+      <x>488</x>
+      <y>168</y>
+      <w>176</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>// Group of lexicalEntries related to a specific 
 // result for a given word ID.
@@ -400,10 +402,10 @@ m2=0..n
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>518</x>
-      <y>280</y>
-      <w>70</w>
-      <h>105</h>
+      <x>592</x>
+      <y>336</y>
+      <w>80</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>// Other words from which their Sense derives
 derivativeOf
@@ -414,10 +416,10 @@ m2=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>539</x>
-      <y>427</y>
-      <w>63</w>
-      <h>98</h>
+      <x>616</x>
+      <y>504</y>
+      <w>72</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>domains
 m1=0..n
@@ -427,10 +429,10 @@ m2=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>749</x>
-      <y>378</y>
-      <w>112</w>
-      <h>35</h>
+      <x>856</x>
+      <y>448</y>
+      <w>128</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>LexicalEntryNote
 --
@@ -441,10 +443,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>805</x>
-      <y>483</y>
-      <w>112</w>
-      <h>63</h>
+      <x>920</x>
+      <y>568</y>
+      <w>128</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>// Abstract Note for all part of the system
 AbstractNote
@@ -458,10 +460,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>798</x>
-      <y>406</y>
-      <w>84</w>
-      <h>91</h>
+      <x>912</x>
+      <y>480</y>
+      <w>96</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>100.0;110.0;10.0;10.0</additional_attributes>
@@ -469,10 +471,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>280</y>
-      <w>168</w>
-      <h>112</h>
+      <x>720</x>
+      <y>336</y>
+      <w>192</w>
+      <h>128</h>
     </coordinates>
     <panel_attributes>// A linguistic category of words (or more precisely
 // lexical items), generally defined by the syntactic 
@@ -487,10 +489,10 @@ m2=0..1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>826</x>
-      <y>112</y>
-      <w>140</w>
-      <h>49</h>
+      <x>944</x>
+      <y>144</y>
+      <w>160</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>Entry
 --
@@ -526,10 +528,10 @@ bg=red</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>616</x>
-      <y>133</y>
-      <w>224</w>
-      <h>91</h>
+      <x>704</x>
+      <y>168</y>
+      <w>256</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>// A linguistic category of words (or more precisely
 // lexical items), generally defined by the syntactic 
@@ -543,10 +545,10 @@ m2=0..1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1085</x>
-      <y>119</y>
-      <w>84</w>
-      <h>56</h>
+      <x>1240</x>
+      <y>152</y>
+      <w>96</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>Etymology
 --
@@ -559,10 +561,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>959</x>
-      <y>119</y>
-      <w>140</w>
-      <h>35</h>
+      <x>1096</x>
+      <y>152</y>
+      <w>160</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>// A linguistic category of words (or more precisely
 // lexical items), generally defined by the syntactic 
@@ -576,10 +578,10 @@ m2=0..1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>105</x>
-      <y>56</y>
-      <w>812</w>
-      <h>161</h>
+      <x>120</x>
+      <y>80</y>
+      <w>928</w>
+      <h>184</h>
     </coordinates>
     <panel_attributes>pronunciations
 m1=1..1
@@ -589,10 +591,10 @@ m2=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>644</x>
-      <y>574</y>
-      <w>112</w>
-      <h>63</h>
+      <x>920</x>
+      <y>720</y>
+      <w>128</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>// Abstract Note for all part of the system
 NoteType
@@ -606,24 +608,24 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>693</x>
-      <y>539</y>
-      <w>182</w>
-      <h>56</h>
+      <x>976</x>
+      <y>632</y>
+      <w>40</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
 m2=0..n
 </panel_attributes>
-    <additional_attributes>10.0;50.0;240.0;10.0</additional_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1029</x>
-      <y>210</y>
-      <w>84</w>
-      <h>56</h>
+      <x>1176</x>
+      <y>256</y>
+      <w>96</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>Sense
 --
@@ -636,10 +638,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>896</x>
-      <y>154</y>
-      <w>182</w>
-      <h>70</h>
+      <x>1024</x>
+      <y>192</y>
+      <w>208</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>// A linguistic category of words (or more precisely
 // lexical items), generally defined by the syntactic 
@@ -653,10 +655,10 @@ m2=0..1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>931</x>
-      <y>308</y>
-      <w>84</w>
-      <h>56</h>
+      <x>1080</x>
+      <y>448</y>
+      <w>96</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>SenseDefinition
 --
@@ -669,10 +671,10 @@ bg=green</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>973</x>
-      <y>259</y>
-      <w>84</w>
-      <h>63</h>
+      <x>1128</x>
+      <y>312</y>
+      <w>136</w>
+      <h>152</h>
     </coordinates>
     <panel_attributes>// A linguistic category of words (or more precisely
 // lexical items), generally defined by the syntactic 
@@ -681,15 +683,15 @@ bg=green</panel_attributes>
 definitions
 m1=0..n
 m2=0..1</panel_attributes>
-    <additional_attributes>10.0;70.0;100.0;10.0</additional_attributes>
+    <additional_attributes>10.0;170.0;140.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>217</x>
-      <y>259</y>
-      <w>868</w>
-      <h>266</h>
+      <x>248</x>
+      <y>312</y>
+      <w>992</w>
+      <h>304</h>
     </coordinates>
     <panel_attributes>// A linguistic category of words (or more precisely
 // lexical items), generally defined by the syntactic 
@@ -699,5 +701,110 @@ examples
 m1=0..n
 m2=0..1</panel_attributes>
     <additional_attributes>10.0;360.0;1220.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>704</y>
+      <w>128</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>ExampleNote
+--
+--
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>608</y>
+      <w>296</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>350.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>208</x>
+      <y>632</y>
+      <w>328</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>// A linguistic category of words (or more precisely
+// lexical items), generally defined by the syntactic 
+// or morphological behaviour of the lexical item in 
+// question, such as noun or verb ,
+notes &gt;
+m1=0..n
+&lt; example
+m2=0..1</panel_attributes>
+    <additional_attributes>10.0;10.0;390.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>168</x>
+      <y>712</y>
+      <w>136</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>ExampleDefinition
+--
++ id
++ text: string
+--
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>184</x>
+      <y>632</y>
+      <w>88</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>// A linguistic category of words (or more precisely
+// lexical items), generally defined by the syntactic 
+// or morphological behaviour of the lexical item in 
+// question, such as noun or verb ,
+definitions &gt;
+m1=0..n
+m2=0..1</panel_attributes>
+    <additional_attributes>10.0;10.0;20.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>696</x>
+      <y>0</y>
+      <w>136</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Dictionary
+--
++ id: string
++ text: string 
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>416</x>
+      <y>16</y>
+      <w>296</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>language &gt;
+&lt; headWordEntries
+m1=1..1
+m2=0..n</panel_attributes>
+    <additional_attributes>350.0;20.0;10.0;20.0;10.0;120.0</additional_attributes>
   </element>
 </diagram>

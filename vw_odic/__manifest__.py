@@ -32,7 +32,8 @@
         "views/etymology.xml",
         "views/sense.xml",
         "views/definition.xml",
-        "views/example.xml"
+        "views/example.xml",
+
     ],
     'auto_install': False,
     'installable': True,
