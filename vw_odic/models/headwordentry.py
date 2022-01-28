@@ -31,8 +31,10 @@ class HeadwordEntry(models.Model):
         string='Pronunciations',
         help="Other words from which their Sense derives")
     pictures_ids = fields.Many2many(
-        comodel_name='vw_odic.picture',
-        relation="vw_odic_hwentry_picture",
+        comodel_name='vw_odic.headwordpicture',
+        relation="vw_odic_headwordentryentry_picture",
+        column1='headwordentry_id',
+        column2='picture_id',
         string='Pictures',
         help="Related pictures to the headword")
     lexicalEntries_ids = fields.One2many(

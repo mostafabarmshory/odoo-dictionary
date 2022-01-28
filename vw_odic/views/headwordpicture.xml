@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<odoo>
+	<record id="vw_odic.headwordpicture_view_tree"
+		model="ir.ui.view">
+		<field name="name">vw_odic.headwordpicture.tree</field>
+		<field name="model">vw_odic.headwordpicture</field>
+		<field name="arch" type="xml">
+			<tree string="Picture">
+				<field name="text" />
+				<field name="regions_ids" widget="many2many_tags" />
+				<field name="image_1920" widget="image" class="oe_avatar"
+					options="{'preview_image': 'image_128'}" />
+			</tree>
+		</field>
+	</record>
+	<record id="vw_odic.headwordpicture_view_kanban"
+		model="ir.ui.view">
+		<field name="name">vw_odic.headwordpicture.kanban</field>
+		<field name="model">vw_odic.headwordpicture</field>
+		<field name="arch" type="xml">
+			<kanban string="Picture">
+				<field name="id" />
+				<field name="text" />
+				<field name="image_1920" />
+				<templates>
+					<t t-name="kanban-box">
+						<div t-attf-class="card oe_kanban_global_click" style="width: 18rem;">
+							<img class="card-img-top" 
+								t-att-alt="record.text.value"
+								t-att-src="kanban_image('vw_odic.headwordpicture', 'image_128', record.id.raw_value)" />
+							<div class="card-body"></div>
+						</div>
+					</t>
+				</templates>
+			</kanban>
+		</field>
+	</record>
+	<record id="vw_odic_headwordpicture_view_form"
+		model="ir.ui.view">
+		<field name="name">vw_odic.headwordpicture.form</field>
+		<field name="model">vw_odic.headwordpicture</field>
+		<field name="arch" type="xml">
+			<form string="Picture">
+				<sheet>
+					<group>
+						<group>
+							<field name="text" />
+							<field name="regions_ids" widget="many2many_tags" />
+						</group>
+						<group>
+							<field name="image_1920" widget="image" class="oe_avatar"
+								options="{'preview_image': 'image_128'}" />
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id="vw_odic_headwordpicture_view_search"
+		model="ir.ui.view">
+		<field name="name">vw_odic.headwordpicture.search</field>
+		<field name="model">vw_odic.headwordpicture</field>
+		<field name="arch" type="xml">
+			<search string="Properties">
+				<field name="text" />
+			</search>
+		</field>
+	</record>
+	<record id="vw_odic_model_headwordpicture_action"
+		model="ir.actions.act_window">
+		<field name="name">Pictures</field>
+		<field name="res_model">vw_odic.headwordpicture</field>
+		<field name="view_mode">kanban,tree,form</field>
+		<field name="help" type="html">
+			<p>List of pictures to manage.</p>
+		</field>
+	</record>
+	<menuitem id="vw_odic_menu_advertisement_headwordpicture"
+		parent="vw_odic_menu_multimedia" name="Pictures"
+		action="vw_odic_model_headwordpicture_action" />
+</odoo>
