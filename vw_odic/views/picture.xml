@@ -4,7 +4,7 @@
 		<field name="name">vw_odic.picture.tree</field>
 		<field name="model">vw_odic.picture</field>
 		<field name="arch" type="xml">
-			<tree string="Pictures">
+			<tree string="pictures">
 				<field name="picture" />
 				<field name="text" />
 				<field name="regions_ids" widget="many2many_tags" />
@@ -15,7 +15,7 @@
 		<field name="name">vw_odic.picture.form</field>
 		<field name="model">vw_odic.picture</field>
 		<field name="arch" type="xml">
-			<form string="Picture">
+			<form string="picture">
 				<sheet>
 					<group>
 						<group>
@@ -41,7 +41,7 @@
 	<record 
 		id="vw_odic_model_picture_action"
 		model="ir.actions.act_window">
-		<field name="name">Pictures</field>
+		<field name="name">pictures</field>
 		<field name="res_model">vw_odic.picture</field>
 		<field name="view_mode">tree,form</field>
 		<field name="help" type="html">
@@ -51,6 +51,6 @@
 	<menuitem
 		id="vw_odic_menu_advertisement_picture"
 		parent="vw_odic_menu_multimedia"
-		name="Pictures"
+		name="pictures"
 		action="vw_odic_model_picture_action" />
 </odoo>

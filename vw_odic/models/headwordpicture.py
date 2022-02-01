@@ -5,13 +5,15 @@ class Picture(models.Model):
     
     # TODO: 2022, Maso: see pronunciation for more attrs
     
-    _name = "vw_odic.picture"
+    _name = "vw_odic.headwordpicture"
     _description = "A grouping of picture information."
     _rec_name = 'text'
+    _inherit = 'image.mixin'
     
-    picture = fields.Binary(
-        required=False,
-        help="The picture file")
+    
+    # picture = fields.Image(
+    #     required=False,
+    #     help="The picture file")
     
     text = fields.Char(
         string='Text', 

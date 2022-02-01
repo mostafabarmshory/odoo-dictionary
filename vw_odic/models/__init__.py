@@ -19,7 +19,7 @@ from . import example
 from . import exampleNote
 from . import exampledefinition
 from . import register
-from . import picture
+from . import headwordpicture
 from . import dictionary
 
 

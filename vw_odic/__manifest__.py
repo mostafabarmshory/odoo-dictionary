@@ -24,6 +24,7 @@
         "views/lexicalcategory.xml",
         
         "views/headwordentry.xml",
+        "views/headwordpicture.xml",
         "views/lexicalentery.xml",
         "views/lexicalentryNote.xml",
         "views/pronunciation.xml",
@@ -34,7 +35,6 @@
         "views/definition.xml",
         "views/example.xml",
         "views/dictionary.xml",
-        "views/picture.xml",
     ],
     'auto_install': False,
     'installable': True,
